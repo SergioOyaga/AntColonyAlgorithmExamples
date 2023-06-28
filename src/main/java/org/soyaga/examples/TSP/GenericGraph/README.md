@@ -6,8 +6,8 @@ Solution of the Travel Salesman Problem (TSP) using a GenericGraph as base struc
     <th> <b>Oliver30 Path </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/oliver30Gif.gif"  title="Solution for the oliver30Path" alt="Solution for the oliver30Path" width="900" height="913" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/oliver30.jpg"  title="Solution for the oliver30Path" alt="Solution for the oliver30Path" width="900" height="913" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/oliver30Gif.gif"  title="Solution for the oliver30Path" alt="Solution for the oliver30Path" width="450" height="4.60" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/oliver30.jpg"  title="Solution for the oliver30Path" alt="Solution for the oliver30Path" width="450" height="460" /></td>
   </tr>
 </table>
 
