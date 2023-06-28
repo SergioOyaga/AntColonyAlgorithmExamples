@@ -6,8 +6,8 @@ Solution of the Travel Salesman Problem (TSP) using dense Arrays as base structu
     <th colspan="2"> <b>Hexagon Path </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagonGif.gif"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="630" height="540" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagon.png"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="630" height="540" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagonGif.gif"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="400" height="342" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagon.png"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="400" height="342" /></td>
   </tr>
 </table>
 

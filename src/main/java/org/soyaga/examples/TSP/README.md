@@ -21,7 +21,7 @@ We find 3 different design approached for solving the TSP optimization problem u
 from the OptimizationLib.
 1. [DenseMatrices](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/DenseMatrices):
    Solve the problem using dense matrices as information containers.
-2. [SparseMAtrices](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMAtrices):
+2. [SparseMAtrices](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMatrices):
    Solve the problem using sparse matrices as information containers.
 3. [GenericGraph](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/GenericGraph):
    Solve the problem using a Graph representation as information container.
