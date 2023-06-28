@@ -6,7 +6,7 @@ Solution of the Travel Salesman Problem (TSP) using HashMaps as base structure t
     <th> <b>Colony Path </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/colony.gif"  title="Solution for the ColonyPath" alt="Solution for the colonyPath" width="750" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/colonyGif.gif"  title="Solution for the ColonyPath" alt="Solution for the colonyPath" width="750" height="300" /></td>
   </tr>
   <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/colony.jpg"  title="Solution for the ColonyPath" alt="Solution for the colonyPath" width="750" height="300" /></td>
