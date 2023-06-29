@@ -2,6 +2,7 @@ package org.soyaga.examples.TSP.SparseMatrices;
 
 import lombok.Getter;
 import org.soyaga.Initializer.ACOInitializer;
+import org.soyaga.aco.Ant.EdgeSelector.RandomProportionalEdgeSelector;
 import org.soyaga.aco.Ant.SimpleMemoryAnt;
 import org.soyaga.aco.Colony;
 import org.soyaga.aco.Solution.AllNodesLineSolution;
@@ -40,7 +41,9 @@ public class RunSparseTspOptimization {
         Integer endNode = 32;
         //Double with the penalization added to a solution when the build solution is not a real solution.
         Double penalization = 1000.;
-        //Double with the ants Betta (>0) parameter (importance of the edges distances against the edges pheromones).
+        //Double with the ants Alpha (>0) parameter (importance of the edges pheromones against the edges distances).
+        Double alpha = 1.;
+        //Double with the ants Beta (>0) parameter (importance of the edges distances against the edges pheromones).
         Double beta = 2.;
         //Integer with the maximum number of iterations for the optimization to run.
         Integer maxIterations = 50;
@@ -75,7 +78,9 @@ public class RunSparseTspOptimization {
                                 startNode,                                      //Integer
                                 endNode,                                        //Integer
                                 penalization),                                  //Double
-                        beta),                                              //Double
+                        new RandomProportionalEdgeSelector(                 //EdgeSelector
+                                alpha,                                          //Double
+                                beta)),                                         //Double
                 new MaxIterationCriteriaPolicy(                         //StoppingCriteriaPolicy
                         maxIterations),                                     //Integer
                 new ACOInitializer(),                                   //Initializer
