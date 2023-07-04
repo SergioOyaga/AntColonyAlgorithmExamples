@@ -7,6 +7,7 @@ import org.soyaga.aco.AntColonyAlgorithm.AntColonyAlgorithm;
 import org.soyaga.aco.Colony;
 import org.soyaga.aco.Solution.Solution;
 import org.soyaga.aco.SolutionConstructorPolicy.SolutionConstructorPolicy;
+import org.soyaga.aco.SolutionEvaluatorPolicy.SolutionEvaluatorPolicy;
 import org.soyaga.aco.StopingCriteriaPolicy.StoppingCriteriaPolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.UpdatePheromonePolicy;
 import org.soyaga.aco.world.Graph.Elements.Edge;
@@ -64,6 +65,10 @@ public class GenericGraphTspAntColonyAlgorithm implements AntColonyAlgorithm {
      * SolutionConstructorPolicy Object used to build the solutions in each iteration.
      */
     private SolutionConstructorPolicy solutionConstructorPolicy;
+    /**
+     * SolutionEvaluatorPolicy Object used to evaluate solutions in each iteration
+     */
+    private SolutionEvaluatorPolicy solutionEvaluatorPolicy;
     /**
      * UpdatePheromonePolicy Object used to update the pheromone in the World.
      */
@@ -131,6 +136,7 @@ public class GenericGraphTspAntColonyAlgorithm implements AntColonyAlgorithm {
     public GenericGraphTspAntColonyAlgorithm(String ID, World world, Colony colony, Integer initialColonySize, Ant ant,
                                              StoppingCriteriaPolicy stoppingCriteriaPolicy, ACOInitializer acoInitializer,
                                              SolutionConstructorPolicy solutionConstructorPolicy,
+                                             SolutionEvaluatorPolicy solutionEvaluatorPolicy,
                                              UpdatePheromonePolicy updatePheromonePolicy,
                                              HashMap<Integer, RunGenericGraphTspOptimization.tspNode> worldMap,
                                              Integer scale) {
@@ -143,6 +149,7 @@ public class GenericGraphTspAntColonyAlgorithm implements AntColonyAlgorithm {
         this.stoppingCriteriaPolicy = stoppingCriteriaPolicy;
         this.acoInitializer = acoInitializer;
         this.solutionConstructorPolicy = solutionConstructorPolicy;
+        this.solutionEvaluatorPolicy = solutionEvaluatorPolicy;
         this.updatePheromonePolicy = updatePheromonePolicy;
         this.worldMap = worldMap;
         this.colonyImages= new ArrayList<>();
@@ -168,11 +175,12 @@ public class GenericGraphTspAntColonyAlgorithm implements AntColonyAlgorithm {
         this.acoInitializer.initialize(this);
         while (this.stoppingCriteriaPolicy.hasToContinue(this.generation)){
             this.solutionConstructorPolicy.apply(this.getWorld(), this.getColony());
+            this.solutionEvaluatorPolicy.apply(this.getWorld(), this.getColony());
             this.getColony().computeBestSolution();
             this.colonyImages.add((BufferedImage) this.getResult());
-            System.out.println(this.generation+"\t->\t"+this.getColony().getBestSolution().getFitness());
             this.updatePheromonePolicy.apply(this.getWorld(), this.getColony());
             this.generation++;
+            System.out.println(this.generation+"\t->\t"+this.getColony().getBestSolution().getFitness());
         }
     }
 

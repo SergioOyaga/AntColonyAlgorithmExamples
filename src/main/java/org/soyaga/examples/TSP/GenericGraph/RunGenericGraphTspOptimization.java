@@ -7,6 +7,8 @@ import org.soyaga.aco.Ant.SimpleMemoryAnt;
 import org.soyaga.aco.Colony;
 import org.soyaga.aco.Solution.AllNodesCircleSolution;
 import org.soyaga.aco.SolutionConstructorPolicy.SimpleConstructorPolicy;
+import org.soyaga.aco.SolutionEvaluatorPolicy.SimpleSolutionEvaluatorPolicy;
+import org.soyaga.aco.SolutionEvaluatorPolicy.SolutionEvaluator.PathDistanceSolutionEvaluator;
 import org.soyaga.aco.StopingCriteriaPolicy.MaxIterationCriteriaPolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.AddPheromonePolicy.SolFitnessProportionalAddPheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.EvaporatePheromonePolicy.PercentageEvaporatePheromonePolicy;
@@ -24,7 +26,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Instantiates and optimize a GenericGraphTspAntColonyAlgorithm Object. Fills it with all the ACO classes needed to
+ * Instantiates and optimize a GenericGraphQapAntColonyAlgorithm Object. Fills it with all the ACO classes needed to
  * perform the optimization. Optimizes given the previous configuration and creates GIFs/Images of the results.
  */
 public class RunGenericGraphTspOptimization {
@@ -57,7 +59,7 @@ public class RunGenericGraphTspOptimization {
                 initialPheromone);
         //GenericWorld Object (World Instance).
         World<Node,Edge> world = entryWorld.getValue();
-        //HashMap with the mapping from nodeId (Integer) to node (tspNode).
+        //HashMap with the mapping from nodeId (Integer) to node (qapNode).
         HashMap<Integer, tspNode> worldMap = entryWorld.getKey();
         //AntColonyAlgorithm instance.
         GenericGraphTspAntColonyAlgorithm aco = new GenericGraphTspAntColonyAlgorithm(
@@ -77,6 +79,8 @@ public class RunGenericGraphTspOptimization {
                         maxIterations),                                             //Integer
                 new ACOInitializer(),                                           //Initializer
                 new SimpleConstructorPolicy(),                                  //ConstructorPolicy
+                new SimpleSolutionEvaluatorPolicy(                              //SolutionEvaluatorPolicy
+                        new PathDistanceSolutionEvaluator()),                       //SolutionEvaluator
                 new SimpleUpdatePheromonePolicy(                                //UpdatePheromonePolicy
                         new SolFitnessProportionalAddPheromonePolicy<>(),           //AddPheromonePolicy
                         new PercentageEvaporatePheromonePolicy<>(                   //EvaporatePheromonePolicy
@@ -94,18 +98,18 @@ public class RunGenericGraphTspOptimization {
     /**
      * Function that creates a World object along with map of tspNodes.
      * @param path String with the filename path, where the problem information is contained.
-     * @return AbstractMap.SimpleEntry{@literal <HashMap<Integer, tspNode>,GenericWorld<Integer,Integer>>}
+     * @return AbstractMap.SimpleEntry{@literal <HashMap<Integer, qapNode>,GenericWorld<Integer,Integer>>}
      */
     private static AbstractMap.SimpleEntry<HashMap<Integer, tspNode>,GenericWorld<Node, Edge>> createWorld(
             String path, Double initialPheromone) throws IOException {
         InputStream stream = RunGenericGraphTspOptimization.class.getClassLoader().getResourceAsStream(path); //InputStream
         assert stream != null;
         BufferedReader br = new BufferedReader(new InputStreamReader(stream)); //BufferedReader
-        HashMap<Integer, tspNode> mapNodes = new HashMap<>(); //Hashmap<nodeId,tspNode>
+        HashMap<Integer, tspNode> mapNodes = new HashMap<>(); //Hashmap<nodeId,qapNode>
         //read and build objects.
         br.lines().skip(1).forEach(l->{
                 String [] lSplit = l.split(","); //Split line
-                tspNode node = new tspNode(lSplit[0],lSplit[1],lSplit[2],lSplit[3]); //create tspNode
+                tspNode node = new tspNode(lSplit[0],lSplit[1],lSplit[2],lSplit[3]); //create qapNode
             mapNodes.put(node.getID(), node); //add node to graph
             });
         br.close(); //Close BufferedReader

@@ -7,6 +7,8 @@ import org.soyaga.aco.Ant.SimpleAnt;
 import org.soyaga.aco.Colony;
 import org.soyaga.aco.Solution.AllNodesCircleSolution;
 import org.soyaga.aco.SolutionConstructorPolicy.SimpleConstructorPolicy;
+import org.soyaga.aco.SolutionEvaluatorPolicy.SimpleSolutionEvaluatorPolicy;
+import org.soyaga.aco.SolutionEvaluatorPolicy.SolutionEvaluator.PathDistanceSolutionEvaluator;
 import org.soyaga.aco.StopingCriteriaPolicy.MaxIterationCriteriaPolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.AddPheromonePolicy.SolFitnessProportionalAddPheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.EvaporatePheromonePolicy.PercentageEvaporatePheromonePolicy;
@@ -60,9 +62,9 @@ public class RunDenseTspOptimization {
                 initialPheromone);
         //GenericWorld Object (World Instance).
         World<Integer,Integer> world = entryWorld.getValue();
-        //HashMap with the mapping from nodeId (Integer) to node (tspNode).
+        //HashMap with the mapping from nodeId (Integer) to node (qapNode).
         HashMap<Integer,tspNode> worldMap = entryWorld.getKey().getKey();
-        //HashMap with the mapping from nodeId (Integer) to node (tspNode).
+        //HashMap with the mapping from nodeId (Integer) to node (qapNode).
         HashMap<Integer,tspNode> worldMapOutput = entryWorld.getKey().getValue();
         //AntColonyAlgorithm instance.
         DenseTspAntColonyAlgorithm aco = new DenseTspAntColonyAlgorithm(
@@ -82,6 +84,8 @@ public class RunDenseTspOptimization {
                         maxIterations),                                         //Integer
                 new ACOInitializer(),                                       //Initializer
                 new SimpleConstructorPolicy(),                              //ConstructorPolicy
+                new SimpleSolutionEvaluatorPolicy(                          //SolutionEvaluatorPolicy
+                        new PathDistanceSolutionEvaluator()),                   //SolutionEvaluator
                 new SimpleUpdatePheromonePolicy(                            //UpdatePheromonePolicy
                         new SolFitnessProportionalAddPheromonePolicy<>(),       //AddPheromonePolicy
                         new PercentageEvaporatePheromonePolicy<>(               //EvaporatePheromonePolicy
@@ -99,7 +103,7 @@ public class RunDenseTspOptimization {
     /**
      * Function that creates a World object along with map of tspNodes.
      * @param path String with the filename path, where the problem information is contained.
-     * @return AbstractMap.SimpleEntry{@literal <HashMap<Integer, tspNode>,GenericWorld<Integer,Integer>>}
+     * @return AbstractMap.SimpleEntry{@literal <HashMap<Integer, qapNode>,GenericWorld<Integer,Integer>>}
      */
     private static AbstractMap.SimpleEntry<AbstractMap.SimpleEntry<HashMap<Integer, tspNode>,HashMap<Integer, tspNode>>,
             GenericWorld<Integer,Integer>> createWorld(
@@ -107,14 +111,14 @@ public class RunDenseTspOptimization {
         InputStream stream = RunDenseTspOptimization.class.getClassLoader().getResourceAsStream(path); //InputStream
         assert stream != null;
         BufferedReader br = new BufferedReader(new InputStreamReader(stream)); //BufferedReader
-        HashMap<Integer, tspNode> mapNodes = new HashMap<>(); //Hashmap<nodeId,tspNode>
-        HashMap<Integer, tspNode> mapNodesOutput = new HashMap<>(); //Hashmap<nodeId,tspNode>
+        HashMap<Integer, tspNode> mapNodes = new HashMap<>(); //Hashmap<nodeId,qapNode>
+        HashMap<Integer, tspNode> mapNodesOutput = new HashMap<>(); //Hashmap<nodeId,qapNode>
         HashMap<Integer, Integer> mapColNumbToNodeId = new HashMap<>(); //Hashmap<colNum,nodeId>
         HashMap<Integer, Integer> mapNodeIdToColNumb = new HashMap<>(); //Hashmap<nodeId,colNum>
         //read and build objects.
         br.lines().skip(1).forEach(l->{
             String [] lSplit = l.split(","); //Split line
-            tspNode node = new tspNode(lSplit[0],lSplit[1],lSplit[2],lSplit[3]); //create tspNode
+            tspNode node = new tspNode(lSplit[0],lSplit[1],lSplit[2],lSplit[3]); //create qapNode
             mapNodes.put(node.getID(), node); //add node to graph
         });
         br.close(); //Close BufferedReader
