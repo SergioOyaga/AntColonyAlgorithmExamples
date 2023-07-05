@@ -134,6 +134,7 @@ the developer to store additional node information.
   <td> 
 
     Total Time = (3 sec, 833ms)
+    Iter	->	Fitness
     1	->	2944.0
     2	->	2900.0
     3	->	2858.0
