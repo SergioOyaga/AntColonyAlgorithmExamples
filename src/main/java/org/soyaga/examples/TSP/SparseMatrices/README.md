@@ -15,7 +15,7 @@ Solution of the Travel Salesman Problem (TSP) using HashMaps as base structure t
 
 ## In this folder:
 We find 2 different classes that defines the problem dependent structures that we have to create (Implementing their
-corresponding OptimizationLib.ga interfaces).
+corresponding OptimizationLib.aco interfaces).
 1. [SparseTspAntColonyAlgorithm](#sparsetspantcolonyalgorithm): Implements AntColonyAlgorithm.
 2. [RunSparseTspOptimization](#runsparsetspoptimization): This is the main class. Here we instantiate our SparseTspAntColonyAlgorithm Object with all his components.
 
@@ -42,12 +42,18 @@ The specific components for the SparseTspAntColonyAlgorithm are:
     storing distances as values.
   - <b>SparseMatrixPheromoneContainer</b>: A PheromoneContainer that represent connections as transitions between 
     columns and rows in HashMaps, storing pheromone as values.
+- <b>Colony</b>: The Colony where the ants "live".
+- <b>antNumber</b>: Integer with the number of ants.
 - <b>SimpleMemoryAnt</b>: An Ant that does know where it has been, and tries to not visit the same node twice.
     - <b>AllNodesLineSolution</b>: A Solution that forces the Ant to "move" until the final node is found and all nodes
-  in the graph have been visited. 
+  in the graph have been visited.
+    - <b>RandomProportionalEdgeSelector</b>: An EdgeSelector procedure that looks at the amount of pheromone present and
+      the attractiveness of an edge to be selected by an ant.
 - <b>MaxIterationCriteriaPolicy</b>: A StoppingCriteria based on a maximum number of iteration.
 - <b>ACOInitializer</b>: An Initializer that instantiate N ants in a Colony.
 - <b>SimpleConstructorPolicy</b>: A ConstructorPolicy that builds solutions using the ants sequentially.
+- <b>SimpleSolutionEvaluatorPolicy</b>: A SolutionEvaluatorPolicy that goes over each ant sequentially, evaluating its Solution.
+  - <b> PathDistanceSolutionEvaluator</b>: A SolutionEvaluator that evaluates a proposed solution as in TSP problem.
 - <b>SimpleUpdatePheromonePolicy</b>: A UpdatePheromonePolicy that first evaporates pheromone and then adds it using the ant's information.
   - <b>SolFitnessProportionalAddPheromonePolicy</b>: An AddPheromonePolicy that adds pheromone to the paths used by the ants 
     proportionally to how good those paths are.
