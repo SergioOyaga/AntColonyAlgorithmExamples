@@ -155,7 +155,7 @@ the developer to store additional node information.
 
   </td>
   <td>
-  <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/QAP_solution.png"  title="Optimal solution" alt="Optimal solution" width="400" height="600" />
+  <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/QAP_solution.png"  title="Optimal solution" alt="Optimal solution" width="400" height="400" />
   </td>
   </tr>
 </table>
