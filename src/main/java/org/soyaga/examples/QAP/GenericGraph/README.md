@@ -151,11 +151,11 @@ the developer to store additional node information.
     998	->	2320.0
     999	->	2320.0
     1000	->	2320.0
-    f2-->I	f3-->A	f6-->H	f1-->B	f8-->D	f9-->C	f7-->E	f4-->F	f5-->G	
-    
+    f2-->I	f3-->A	f6-->H	f1-->B	f8-->D	f9-->C	f7-->E	f4-->F	f5-->G
+
   </td>
   <td>
-  <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/QAP_solution.png"  title="Optimal solution" alt="Optimal solution" width="400" height="700" />
+  <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/QAP_solution.png"  title="Optimal solution" alt="Optimal solution" width="400" height="600" />
   </td>
   </tr>
 </table>
