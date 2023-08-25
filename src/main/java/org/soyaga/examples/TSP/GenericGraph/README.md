@@ -16,7 +16,7 @@ This folder contains 3 different classes that define the structures required for
 These classes implement their respective interfaces from OptimizationLib.aco.
 1. [GenericGraphTspAntColonyAlgorithm](#genericgraphtspantcolonyalgorithm): Extends StatsAntColonyAlgorithm.
 2. [ImageStat](#imagestat): Implements Stat.
-3[RunGenericGraphTspOptimization](#rungenericgraphtspoptimization): The main class for instantiation and optimization.
+3. [RunGenericGraphTspOptimization](#rungenericgraphtspoptimization): The main class for instantiation and optimization.
 
 ### [GenericGraphTspAntColonyAlgorithm](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/GenericGraph/GenericGraphTspAntColonyAlgorithm.java):
 This class extends StatsAntColonyAlgorithm, which by extension makes it an Optimizer instance. In other words, this class
