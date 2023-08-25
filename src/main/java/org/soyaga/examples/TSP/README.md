@@ -1,5 +1,5 @@
 # Travelling Salesman Problem (TSP)
-The travelling salesman problem asks the following question: "Given a list of cities and the distances between 
+The traveling salesman problem asks the following question: "Given a list of cities and the distances between 
 each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin 
 city?" It is an NP-hard problem in combinatorial optimization.
 
@@ -14,11 +14,11 @@ city?" It is an NP-hard problem in combinatorial optimization.
   </tr>
 </table>
 
-For more information about the problem refer [Here](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+For more information about the problem, refer [Here](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
 
 ## In this folder:
-We find 3 different design approached for solving the TSP optimization problem using the Ant Colony Algorithm (ACO)
-from the OptimizationLib.
+We find three different designs approached for solving the TSP optimization problem using the Ant Colony Algorithm (ACO)
+from the OptimizationLib.aco.
 1. [DenseMatrices](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/DenseMatrices):
    Solve the problem using dense matrices as information containers.
 2. [SparseMAtrices](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMatrices):
@@ -27,20 +27,24 @@ from the OptimizationLib.
    Solve the problem using a Graph representation as information container.
 
 ## About the approaches:
-Although a complete AntColonyAlgorithm consist in at least 13 different classes,
-with a minimal implementation of 2-3 classes (which are problem dependent) we can design an ACO that allow us to "optimize"
-some computationally "hard" problems (P, NP, NP-Complete and/or NP-Hard).
+While a complete AntColonyAlgorithm comprises at least 17 distinct classes, a minimal implementation can 
+consist of just 3 to 4 classes, which are contingent on the problem being addressed. This streamlined implementation 
+allows us to devise an ACO capable of optimizing computationally challenging problems categorized as P, NP, NP-Complete,
+and/or NP-Hard.
 
-In the examples we use the OptimizationLib build-in classes for the ACO optimization methodology.
-The three information structures used are the three most frequently used to store information. Most of the problems we 
-will want to optimize could be reduced to one of these structures.
+In the provided examples, we leverage the built-in classes from OptimizationLib.aco to facilitate the ACO optimization 
+approach. The three information structures employed are the most commonly used for storing data. The majority of the 
+problems we aim to optimize can be reduced to one of these structures.
 
-However, we do not force the use of these structures, you can have whatever you want as World, Graph or 
-PheromoneContainer. You can have any fancy structure that better fits your design, you just have to commit to the 
-required interfaces. 
+Nonetheless, we don't impose the use of these structures; you are free to adopt any World, Graph, or PheromoneContainer
+that suits your needs. You can opt for more sophisticated structures that align better with your design; you just need 
+to adhere to the requisite interfaces.
+
 
 ## Comment:
-The examples in these folders are just to illustrate the power of ACOs, and the simplicity of use/implementation
-that give us the aco library in the OptimizationLib framework. The problem is solved using 3 different configurations,
-some configurations are more suitable for this problem and others are not. Just remember they are examples that you can
-use as template to adapt for your specific problems.
+The examples provided in these directories serve solely to showcase the capabilities of ACOs and the user-friendly
+implementation afforded by the aco library within the OptimizationLib framework. The problem at hand is addressed using 
+three distinct configurations, with certain configurations being more apt for this particular problem than others. It's
+important to bear in mind that these are illustrative examples, meant to serve as templates that you can modify to suit 
+your specific problems.
+

@@ -1,5 +1,5 @@
 # SparseMatrices
-Solution of the Travel Salesman Problem (TSP) using HashMaps as base structure to store information.
+Solving the Travel Salesman Problem (TSP) using HashMaps as base structure to store information.
 
 <table>
   <tr>
@@ -14,64 +14,68 @@ Solution of the Travel Salesman Problem (TSP) using HashMaps as base structure t
 </table>
 
 ## In this folder:
-We find 2 different classes that defines the problem dependent structures that we have to create (Implementing their
-corresponding OptimizationLib.aco interfaces).
-1. [SparseTspAntColonyAlgorithm](#sparsetspantcolonyalgorithm): Implements AntColonyAlgorithm.
-2. [RunSparseTspOptimization](#runsparsetspoptimization): This is the main class. Here we instantiate our SparseTspAntColonyAlgorithm Object with all his components.
+This folder contains 3 different classes that define the structures required for solving the problem. 
+These classes implement their respective interfaces from OptimizationLib.aco.
+1. [SparseTspAntColonyAlgorithm](#sparsetspantcolonyalgorithm): Extends StatsAntColonyAlgorithm.
+2. [ImageStat](#imagestat): Implements Stat.
+3. [RunSparseTspOptimization](#runsparsetspoptimization): The main class for instantiation and optimization.
 
 ### [SparseTspAntColonyAlgorithm](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMatrices/SparseTspAntColonyAlgorithm.java):
-This class implements AntColonyAlgorithm, which by extension makes it an Optimizer instance. In other words this class 
+This class extends StatsAntColonyAlgorithm, which by extension makes it an Optimizer instance. In other words, this class 
 can be optimized and its results can be gathered.
 
 ````code
 public void optimize(){...}
-public Object getResult(){...}
+public Object getResult(Object ... resultArgs){...}
 ````
 
-The <i>optimize</i> function is implemented in a way that the generation number is passed as VarArg to most of the actions
-executed by the SparseTspAntColonyAlgorithm parts (solutionConstructorPolicy, updatePheromonePolicy...). 
-The <i>getResults</i> function returns an Image that will be stored or used to build the gif.
+The <i>optimize</i> method is inherited from the abstract class StatsAntColonyAlgorithm, which defines a basic optimization 
+procedure. The <i>getResults</i> function computes and stores a GIF image.
+
+### [ImageStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMatrices/ImageStat.java)
+This class implements Stat. This means that this class can be measured following a StatRetrievalPolicy. For this Stat, 
+during its evaluation, an image is computed and stored using the best solution.
 
 ### [RunSparseTspOptimization](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMatrices/RunSparseTspOptimization.java):
 This is the main class. Is where the run starts. As simple as instantiate the RunSparseTspOptimization object 
 (previously defined) filled with its components, optimize it, and retrieve the results.
 
-The specific components for the SparseTspAntColonyAlgorithm are:
-- <b>GenericWorld</b>: A World that contain a Graph and a PheromoneContainer.
-  - <b>SparseMatrixGraph</b>: A Graph that represent connections as transitions between columns and rows in HashMaps,
-    storing distances as values.
-  - <b>SparseMatrixPheromoneContainer</b>: A PheromoneContainer that represent connections as transitions between 
-    columns and rows in HashMaps, storing pheromone as values.
-- <b>Colony</b>: The Colony where the ants "live".
-- <b>antNumber</b>: Integer with the number of ants.
-- <b>SimpleMemoryAnt</b>: An Ant that does know where it has been, and tries to not visit the same node twice.
-    - <b>AllNodesLineSolution</b>: A Solution that forces the Ant to "move" until the final node is found and all nodes
-  in the graph have been visited.
-    - <b>RandomProportionalEdgeSelector</b>: An EdgeSelector procedure that looks at the amount of pheromone present and
-      the attractiveness of an edge to be selected by an ant.
-- <b>MaxIterationCriteriaPolicy</b>: A StoppingCriteria based on a maximum number of iteration.
-- <b>ACOInitializer</b>: An Initializer that instantiate N ants in a Colony.
-- <b>SimpleConstructorPolicy</b>: A ConstructorPolicy that builds solutions using the ants sequentially.
-- <b>SimpleSolutionEvaluatorPolicy</b>: A SolutionEvaluatorPolicy that goes over each ant sequentially, evaluating its Solution.
-  - <b> PathDistanceSolutionEvaluator</b>: A SolutionEvaluator that evaluates a proposed solution as in TSP problem.
-- <b>SimpleUpdatePheromonePolicy</b>: A UpdatePheromonePolicy that first evaporates pheromone and then adds it using the ant's information.
-  - <b>SolFitnessProportionalAddPheromonePolicy</b>: An AddPheromonePolicy that adds pheromone to the paths used by the ants 
-    proportionally to how good those paths are.
-  - <b>PercentageEvaporatePheromonePolicy</b>: An EvaporatePheromonePolicy that evaporates pheromone in a rate.
-- <b>worldMap</b>: HashMap<Integer,Integer> that maps the internal nodeID (0 based) to the real one.
-- <b>scale</b>: Double that allows to scale the output image.
+The specific components for the SparseTspAntColonyAlgorithm include:
+- GenericWorld: A World that contains a Graph and a PheromoneContainer.
+  - SparseMatrixGraph: A Graph that stores the info in HashMaps.
+  - SparseMatrixPheromoneContainer: A PheromoneContainer that stores the info in HashMaps.
+- Colony.
+- MaxIterationCriteriaPolicy: A StoppingCriteria based on a maximum number of iterations.
+- ACOInitializer: An Initializer that creates N ants in a colony.
+  - SimpleMemoryAnt: An Ant, in this case, has memory.
+    - Solution.
+      - PathDistanceObjectiveFunction: An ObjectiveFunction that evaluates the ant solution path distance.
+      - AllNodesLineBuilderEvaluator: A BuilderEvaluator that tells the ant to keep building the solution if its 
+      solution doesn't start and end in specific nodes and visit certain nodes.
+    - RandomProportionalEdgeSelector: An EdgeSelector that allows the ant to choose between the available edges.
+- SimpleConstructorPolicy: A ConstructorPolicy, ant by ant build the solution.
+- SimpleUpdatePheromonePolicy: A PheromonePolicy, first evaporate, then add.
+  - SolFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the solution fitness. 
+  - PercentageEvaporatePheromonePolicy: An EvaporatePheromonePolicy that evaporates a certain percentage of the pheromone on each edge.
+- NIterationsStatsRetrievalPolicy: A StatsRetrievalPolicy that retrieves Stats every N iterations.
+  - ImageStat: A Stat that creates and stores an image of the best solution found up to now.
+  - CurrentMinFitnessStat: A Stat that retrieves the current colony's best fitness.
+  - MeanSdFitnessStat: A Stat that retrieves the colony fitness mean and STD.
 
-On the other hand, the effort in this type of optimizations has to be done when building the World.
 
-In this class some functions are specifically focus on building the World. This is because we need to represent the problem in a 
-graphical way for the ants to travel the "edges".
+On the other hand, the majority of the effort in this type of algorithms must be dedicated to constructing the World.
+
+In this scenario, certain functions are specifically focused on building the World. This is necessary because we must represent
+the problem in a graphical way, creating a structure for the ants to traverse the edges of the graph.
+
 The next function builds the world. 
 
 ````code
-private static AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld<Integer,Integer>> createWorld(String path, Double initialPheromone)
+private static AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld> createWorld(String path, Double initialPheromone)
 ````
-World is build with two Maps that represent "distances" and pheromone between nodes. Each entry.key represents one node 
-in the problem, so the transitions are considered from entry1.key to entry2.key where entry2=entry1.value. 
+The World is constructed using two HashMaps that depict distances and pheromones between nodes. 
+Each entry's key represents a node within the problem — an Integer (in the ACO) and a tspNode (in the ImageStat).
+
 
 ````mermaid
 flowchart TB
@@ -104,9 +108,35 @@ which this node is connected:
 
 
 ## Result example:
+For:
+- antNumber = 30
+- maxEdges = 50
+- startNode = 1, endNode = 32
+- alpha = 1., beta = 2.
+- maxIterations = 50
+- persistence = .9
+- initialPheromone = 0.
+- antPheromoneQuantity=10.
+```
+--------------------------------------------------------------------------
+| Iteration | ImageSaved | CurrentMin | MeanFitness | StandardDevFitness |
+--------------------------------------------------------------------------
+| 1         | true       | 364.7577   | 448.4405    | 48.8232            |
+| 2         | true       | 166.4066   | 249.0471    | 30.9118            |
+| 3         | true       | 166.4066   | 216.5800    | 26.0227            |
+| 4         | true       | 166.4066   | 208.1145    | 28.2782            |
+| 5         | true       | 118.1623   | 194.0057    | 26.4890            |
+| 6         | true       | 118.1623   | 196.2808    | 28.0147            |
+| 7         | true       | 118.1623   | 186.4047    | 20.8036            |
+| 8         | true       | 118.1623   | 197.2447    | 22.8559            |
+| 9         | true       | 118.1623   | 181.0381    | 20.3545            |
+| 10        | true       | 118.1623   | 180.8276    | 20.0710            |
+| 11        | true       | 118.1623   | 182.2151    | 22.0849            |
+| 12        | true       | 115.0000   | 179.4922    | 30.8367            |
+```
 
 ## Comment:
-This solution is not exactly the classical TSP where the route has to start and end en the same node, but to start in 
-one node and finish in another. This is the typical case of a route planning with multiple stops.This problem is 
-typically solved using the well establish Dijkstra's Algorithm. :scream_cat:
-
+This solution doesn't precisely adhere to the classical TSP, where the route must both start and end at the same node. 
+Instead, it involves commencing at one node and concluding at another. This scenario aligns with the common case of
+route planning involving multiple stops. Typically, this problem is tackled using the well-established Dijkstra's 
+Algorithm. :scream_cat:

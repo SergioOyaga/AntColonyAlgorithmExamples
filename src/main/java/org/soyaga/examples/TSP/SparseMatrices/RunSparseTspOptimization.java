@@ -4,12 +4,15 @@ import lombok.Getter;
 import org.soyaga.Initializer.ACOInitializer;
 import org.soyaga.aco.Ant.EdgeSelector.RandomProportionalEdgeSelector;
 import org.soyaga.aco.Ant.SimpleMemoryAnt;
+import org.soyaga.aco.BuilderEvaluator.AllNodesLineBuilderEvaluator;
 import org.soyaga.aco.Colony;
-import org.soyaga.aco.Solution.AllNodesLineSolution;
+import org.soyaga.aco.Evaluable.Objective.PathDistanceObjectiveFunction;
+import org.soyaga.aco.Solution;
 import org.soyaga.aco.SolutionConstructorPolicy.SimpleConstructorPolicy;
-import org.soyaga.aco.SolutionEvaluatorPolicy.SimpleSolutionEvaluatorPolicy;
-import org.soyaga.aco.SolutionEvaluatorPolicy.SolutionEvaluator.PathDistanceSolutionEvaluator;
-import org.soyaga.aco.StopingCriteriaPolicy.MaxIterationCriteriaPolicy;
+import org.soyaga.aco.StatsRetrievalPolicy.NIterationsStatsRetrievalPolicy;
+import org.soyaga.aco.StatsRetrievalPolicy.Stat.CurrentMinFitnessStat;
+import org.soyaga.aco.StatsRetrievalPolicy.Stat.MeanSdFitnessStat;
+import org.soyaga.aco.StoppingPolicy.MaxIterationCriteriaPolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.AddPheromonePolicy.SolFitnessProportionalAddPheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.EvaporatePheromonePolicy.PercentageEvaporatePheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.SimpleUpdatePheromonePolicy;
@@ -18,8 +21,6 @@ import org.soyaga.aco.world.Graph.SparseMatrixGraph;
 import org.soyaga.aco.world.PheromoneContainer.SparseMatrixPheromoneContainer;
 import org.soyaga.aco.world.World;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -27,22 +28,23 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 
+
 /**
- * Instantiates and optimize a SparseTspAntColonyAlgorithm Object. Fills it with all the ACO classes needed to
- * perform the optimization. Optimizes given the previous configuration and creates GIFs/Images of the results.
+ * This class instantiates and optimizes a SparseTspAntColonyAlgorithm object. It populates the object with all
+ * the necessary ACO classes required to perform the optimization. The optimization is carried out based on the
+ * provided configuration, and GIFs/images of the results are generated.
  */
 public class RunSparseTspOptimization {
     public static void main(String ... args) throws IOException {
-        //Integer with the number of ants.
-        Integer antNumber =30;
-        //Integer with the maximum number of edges an ants solution can have.
+        //Integer with the number of ants. Approximately the number of nodes in the graph.
+        Integer antNumber = 30;
+        //Integer with the maximum number of edges an ant solution can have. This number has to ensure the
+        // solution can be found.
         Integer maxEdges = 50;
         //Integer with the start node.
         Integer startNode = 1;
         //Integer with the end node.
         Integer endNode = 32;
-        //Double with the penalization added to a solution when the build solution is not a real solution.
-        Double penalization = 1000.;
         //Double with the ants Alpha (>0) parameter (importance of the edges pheromones against the edges distances).
         Double alpha = 1.;
         //Double with the ants Beta (>0) parameter (importance of the edges distances against the edges pheromones).
@@ -53,61 +55,87 @@ public class RunSparseTspOptimization {
         Double persistence = .9;
         //Double with initial pheromone present in the edge.
         Double initialPheromone = 0.;
+        //Double with the amount of pheromone each ant can deposit in its track.
+        Double antPheromoneQuantity=10.;
         //String with the path to the image we want to recreate, without the .png/.jpg, it is added by default.
         String inputPath = "TSP/colonyPath.csv";
         //String with the path to the image we want to recreate, without the .png/.jpg, it is added by default.
         String outputPath = "src/out/TSP/image";
         //Integer with the scale to draw the image.
         Integer scale = 30;
-        //Entry with the world information.
-        AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld<Integer,Integer>> entryWorld = createWorld(
+        //Entry with the world information. Entry<HashMap<Node,tspNode>,World>
+        AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld> entryWorld = createWorld(
                 inputPath,
                 initialPheromone);
-        //GenericWorld Object (World Instance).
-        World<Integer,Integer> world = entryWorld.getValue();
-        //HashMap with the mapping from nodeId (Integer) to node (qapNode).
+        //GenericWorld Object (World Instance). Contains a SparseMatrixPheromoneContainer and a SparseMatrixGraph.
+        World world = entryWorld.getValue();
+        //HashMap with the mapping from node (Integer) to real-node (tspNode).
         HashMap<Integer, tspNode> worldMap = entryWorld.getKey();
         //AntColonyAlgorithm instance.
         SparseTspAntColonyAlgorithm aco = new SparseTspAntColonyAlgorithm(
-                "SparseTSP",//ID
-                world,                                                  //GenericWorld
-                new Colony(),                                           //Colony
-                antNumber,                                              //Integer
-                new SimpleMemoryAnt(                                    //Ant
-                        new AllNodesLineSolution(                           //SolutionType
-                                world.getGraph(),                               //Worlds
-                                maxEdges,                                       //Integer
-                                startNode,                                      //Integer
-                                endNode,                                        //Integer
-                                penalization),                                  //Double
-                        new RandomProportionalEdgeSelector(                 //EdgeSelector
-                                alpha,                                          //Double
-                                beta)),                                         //Double
-                new MaxIterationCriteriaPolicy(                         //StoppingCriteriaPolicy
-                        maxIterations),                                     //Integer
-                new ACOInitializer(),                                   //Initializer
-                new SimpleConstructorPolicy(),                          //ConstructorPolicy
-                new SimpleSolutionEvaluatorPolicy(                      //SolutionEvaluatorPolicy
-                        new PathDistanceSolutionEvaluator()),               //SolutionEvaluator
-                new SimpleUpdatePheromonePolicy(                        //UpdatePheromonePolicy
-                        new SolFitnessProportionalAddPheromonePolicy<>(),   //AddPheromonePolicy
-                        new PercentageEvaporatePheromonePolicy<>(           //EvaporatePheromonePolicy
-                                persistence)),                                  //Double
-                worldMap,                                               //HashSet
-                scale                                                   //Double
+                "SparseTSP",                                        //ID
+                world,                                                  //World, GenericWorld (sparse components).
+                new Colony(),                                           //Colony.
+                new MaxIterationCriteriaPolicy(                         //StoppingCriteriaPolicy, max iterations:
+                        maxIterations),                                     //Integer, max iterations.
+                new ACOInitializer(                                     //Initializer:
+                        new SimpleMemoryAnt(                                //Ant, SimpleMemoryAnt:
+                                new Solution(                                   //Solution:
+                                        new PathDistanceObjectiveFunction(),        //Objective function, path distance.
+                                        null,                                       //Feasibility function, none.
+                                        null,                                       //Double, penalization, none.
+                                        maxEdges,                                   //Integer, max number of edges.
+                                        new AllNodesLineBuilderEvaluator(           //Builder evaluator, line, all nodes:
+                                                startNode,                              //Integer, start node.
+                                                endNode,                                //Integer, end node.
+                                                new ArrayList<>(world.getGraph().getNodes())    //Nodes to visit.
+                                        )
+                                ),
+                                new RandomProportionalEdgeSelector(             //Edge Selector, random-proportional:
+                                        alpha,                                      //Double, pheromone importance.
+                                        beta                                        //Double, distance importance.
+                                ),
+                                antPheromoneQuantity                            //Double, pheromone quantity.
+                        ),
+                        antNumber                                           //Integer, number of ants to initialize.
+                ),
+                new SimpleConstructorPolicy(),                          //ConstructorPolicy, ant by ant.
+                new SimpleUpdatePheromonePolicy(                        //UpdatePheromonePolicy, first evaporate then add:
+                        new SolFitnessProportionalAddPheromonePolicy(),     //AddPheromonePolicy, prop to sol fitness.
+                        new PercentageEvaporatePheromonePolicy(             //EvaporatePheromonePolicy, percentage persistence:
+                                persistence)                                    //Double, persistence.
+                ),
+                new NIterationsStatsRetrievalPolicy(                    //Stats retrieval policy, every n iterations:
+                        1,                                                  //Integer, steps between measures.
+                        new ArrayList<>(){{                                 //ArrayList, with the stats:
+                            add(new ImageStat(                                  //Stat, create and store images.
+                                    worldMap,                                       //HashSet, map Node to tspNode
+                                    scale                                           //Double, image scale.
+                            ));
+                            add(new CurrentMinFitnessStat(                      //Stat, current mean fitness.
+                                    4
+                            ));
+                            add(new MeanSdFitnessStat(                          //Stat, colony mean and std fitness.
+                                    4
+                            ));
+                        }},
+                        outputPath,                                         //String, with the output path.
+                        true,                                               //Boolean, print in console.
+                        false                                               //Boolean, store in csv file.
+                )
         );
         aco.optimize();
         //Plot the results
-        GifCreator.createGif(aco.getColonyImages(),outputPath+".gif",100);
-        ImageIO.write((BufferedImage)aco.getResult(), "png",  new File(outputPath+".png"));
+        aco.getResult(outputPath);
     }
 
     /**
-     * Function that creates a World object along with map of tspNodes.
-     * @param path String with the filename path, where the problem information is contained.
-     * @return AbstractMap.SimpleEntry{@literal <HashMap<Integer, qapNode>,GenericWorld<Integer,Integer>>}
+     * Function that creates a World object along with a map of tspNodes.
+     *
+     * @param path String with the filename path, CSV file where the problem information is contained.
+     * @return AbstractMap.SimpleEntry{@literal <HashMap<Integer, qapNode>,GenericWorld>}
      */
-    private static AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld<Integer,Integer>> createWorld(
+    private static AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld> createWorld(
             String path, Double initialPheromone) throws IOException {
         InputStream stream = RunSparseTspOptimization.class.getClassLoader().getResourceAsStream(path); //InputStream
         assert stream != null;
@@ -120,7 +148,6 @@ public class RunSparseTspOptimization {
             mapNodes.put(node.getID(), node); //add node to graph
         });
         br.close(); //Close BufferedReader
-        Integer colNumber=0; //Integer
         SparseMatrixGraph graph=new SparseMatrixGraph(); //CreateGraph
         mapNodes.values().forEach(//Fill with edges
                 node1 -> node1.getRelatedNodes().forEach(
@@ -135,7 +162,7 @@ public class RunSparseTspOptimization {
                 )
         );
         SparseMatrixPheromoneContainer pheromoneMatrix= new SparseMatrixPheromoneContainer(initialPheromone);
-        return new AbstractMap.SimpleEntry<>(mapNodes, new GenericWorld<>(graph,pheromoneMatrix));
+        return new AbstractMap.SimpleEntry<>(mapNodes, new GenericWorld(graph,pheromoneMatrix));
     }
 
     /**
@@ -168,6 +195,7 @@ public class RunSparseTspOptimization {
 
         /**
          * Constructor
+         *
          * @param id String with the node ID assumes it is an Integer.
          * @param x String with the node x position assumes it is a double.
          * @param y String with the node y position assumes it is a double.

@@ -13,16 +13,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * This class allow the creation of a GIF.
+ * This class enables the creation of a GIF.
  */
 public class GifCreator {
-
     /**
-     * Static function that allow the creation of a GIF from an array of images.
+     * Static function that enables the creation of a GIF from an array of images.
+     *
      * @param images ArrayList&lt;BufferedImage&gt; containing the images used to create the gif.
      * @param outputPath String where to store the gif.
      * @param delay Integer with the time in ms between each frame.
-     * @throws IOException
      */
     public static void createGif(ArrayList<BufferedImage> images, String outputPath, int delay) throws IOException {
         ImageWriter writer = null;
@@ -60,8 +59,6 @@ public class GifCreator {
                 writer.writeToSequence(new javax.imageio.IIOImage(image, null, metadata), params);
             }
 
-        } catch (IOException e) {
-            throw e;
         } finally {
             if (writer != null) {
                 writer.endWriteSequence();

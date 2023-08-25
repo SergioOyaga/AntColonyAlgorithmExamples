@@ -1,5 +1,5 @@
 # GenericGraph
-Solution of the Travel Salesman Problem (TSP) using a GenericGraph as base structure to store information.
+Solving the Travel Salesman Problem (TSP) using a GenericGraph as base structure to store information.
 
 <table>
   <tr>
@@ -12,65 +12,67 @@ Solution of the Travel Salesman Problem (TSP) using a GenericGraph as base struc
 </table>
 
 ## In this folder:
-We find 2 different classes that defines the problem dependent structures that we have to create (Implementing their
-corresponding OptimizationLib.aco interfaces).
-1. [GenericGraphTspAntColonyAlgorithm](#genericgraphtspantcolonyalgorithm): Implements AntColonyAlgorithm.
-2. [RunGenericGraphTspOptimization](#rungenericgraphtspoptimization): This is the main class. Here we instantiate our GenericGraphTspAntColonyAlgorithm Object with all his components.
+This folder contains 3 different classes that define the structures required for solving the problem.
+These classes implement their respective interfaces from OptimizationLib.aco.
+1. [GenericGraphTspAntColonyAlgorithm](#genericgraphtspantcolonyalgorithm): Extends StatsAntColonyAlgorithm.
+2. [ImageStat](#imagestat): Implements Stat.
+3[RunGenericGraphTspOptimization](#rungenericgraphtspoptimization): The main class for instantiation and optimization.
 
 ### [GenericGraphTspAntColonyAlgorithm](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/GenericGraph/GenericGraphTspAntColonyAlgorithm.java):
-This class implements AntColonyAlgorithm, which by extension makes it an Optimizer instance. In other words this class 
+This class extends StatsAntColonyAlgorithm, which by extension makes it an Optimizer instance. In other words, this class
 can be optimized and its results can be gathered.
 
 ````code
 public void optimize(){...}
-public Object getResult(){...}
+public Object getResult(Object ... resultArgs){...}
 ````
 
-The <i>optimize</i> function is implemented in a way that the generation number is passed as VarArg to most of the actions
-executed by the GenericGraphTspAntColonyAlgorithm parts (solutionConstructorPolicy, updatePheromonePolicy...). 
-The <i>getResults</i> function returns an Image that will be stored or used to build the gif.
+The <i>optimize</i> method is inherited from the abstract class StatsAntColonyAlgorithm, which defines a basic optimization
+procedure. The <i>getResults</i> function computes and stores a GIF image.
+
+### [ImageStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMatrices/ImageStat.java)
+This class implements Stat. This means that this class can be measured following a StatRetrievalPolicy. For this Stat,
+during its evaluation, an image is computed and stored using the best solution.
 
 ### [RunGenericGraphTspOptimization](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/GenericGraph/RunGenericGraphTspOptimization.java):
 This is the main class. Is where the run starts. As simple as instantiate the RunGenericGraphTspOptimization object 
 (previously defined) filled with its components, optimize it, and retrieve the results.
 
-The specific components for the GenericGraphTspAntColonyAlgorithm are:
-- <b>GenericWorld</b>: A World that contain a Graph and a PheromoneContainer.
-  - <b>GenericGraph</b>: A Graph that represent connections as transitions between columns and rows in HashMaps,
-    storing distances as values.
-  - <b>GenericGraph</b>: A PheromoneContainer that represent connections as transitions between 
-    columns and rows in HashMaps, storing pheromone as values.
-- <b>Colony</b>: The Colony where the ants "live".
-- <b>antNumber</b>: Integer with the number of ants.
-- <b>SimpleMemoryAnt</b>: An Ant that does know where it has been, and tries to not visit the same node twice.
-    - <b>AllNodesCircleSolution</b>: A Solution that forces the Ant to "move" until a circle is completed(start and end in the same node)
-      and all nodes in the graph have been visited.
-    - <b>RandomProportionalEdgeSelector</b>: An EdgeSelector procedure that looks at the amount of pheromone present and
-      the attractiveness of an edge to be selected by an ant.
-- <b>MaxIterationCriteriaPolicy</b>: A StoppingCriteria based on a maximum number of iteration.
-- <b>ACOInitializer</b>: An Initializer that instantiate N ants in a Colony.
-- <b>SimpleConstructorPolicy</b>: A ConstructorPolicy that builds solutions using the ants sequentially.
-- <b>SimpleSolutionEvaluatorPolicy</b>: A SolutionEvaluatorPolicy that goes over each ant sequentially, evaluating its Solution.
-  - <b> PathDistanceSolutionEvaluator</b>: A SolutionEvaluator that evaluates a proposed solution as in TSP problem.
-- <b>SimpleUpdatePheromonePolicy</b>: A UpdatePheromonePolicy that first evaporates pheromone and then adds it using the ant's information.
-  - <b>SolFitnessProportionalAddPheromonePolicy</b>: An AddPheromonePolicy that adds pheromone to the paths used by the ants 
-    proportionally to how good those paths are.
-  - <b>PercentageEvaporatePheromonePolicy</b>: An EvaporatePheromonePolicy that evaporates pheromone in a rate.
-- <b>worldMap</b>: HashMap<Integer,Integer> that maps the internal nodeID (0 based) to the real one.
-- <b>scale</b>: Double that allows to scale the output image.
+The specific components for the GenericGraphTspAntColonyAlgorithm include:
+- GenericWorld: A World that contains a Graph and a PheromoneContainer.
+  - GenericGraph: A Graph and PheromoneContainer that stores the info in a graph-like structure.
+- Colony.
+- MaxIterationCriteriaPolicy: A StoppingCriteria based on a maximum number of iterations.
+- ACOInitializer: An Initializer that creates N ants in a colony.
+  - SimpleMemoryAnt: An Ant, in this case, an ant with memory.
+    - Solution.
+      - PathDistanceObjectiveFunction: An ObjectiveFunction that evaluates the ant solution path distance.
+      - AllNodesCircleBuilderEvaluator: A BuilderEvaluator that tells the ant to keep building the solution if its
+        solution doesn't start and end the same node and visits certain nodes.
+    - RandomProportionalEdgeSelector: An EdgeSelector that allows the ant to choose between the available edges.
+- SimpleConstructorPolicy: A ConstructorPolicy, ant by ant build the solution.
+- SimpleUpdatePheromonePolicy: A PheromonePolicy, first evaporate, then add.
+  - SolFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the solution fitness.
+  - PercentageEvaporatePheromonePolicy: An EvaporatePheromonePolicy that evaporates a certain percentage of the pheromone on each edge.
+- NIterationsStatsRetrievalPolicy: A StatsRetrievalPolicy that retrieves Stats every N iterations.
+  - ImageStat: A Stat that creates and stores an image of the best solution found up to now.
+  - CurrentMinFitnessStat: A Stat that retrieves the current colony's best fitness.
+  - MeanSdFitnessStat: A Stat that retrieves the colony fitness mean and STD.
 
-On the other hand, the effort in this type of optimizations has to be done when building the World.
 
-In this class some functions are specifically focus on building the World. This is because we need to represent the problem in a 
-graphical way for the ants to travel the "edges".
-The next function builds the world. 
+On the other hand, the majority of the effort in this type of algorithms must be dedicated to constructing the World.
+
+In this scenario, certain functions are specifically focused on building the World. This is necessary because we must represent
+the problem in a graphical way, creating a structure for the ants to traverse the edges of the graph.
+
+The next function builds the world.
 
 ````code
-private static AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld<Node,Edge>> createWorld(String path, Double initialPheromone)
+private static AbstractMap.SimpleEntry<HashMap<Integer, tspNode>, GenericWorld> createWorld(String path, Double initialPheromone)
 ````
-World is build with one Graph/PheromoneContainer that represent "distances" and pheromone at the same time. Each Node in
-the Graph has associated a set of Edges that connects it with other Nodes. Those Edges contain the Distance and 
-Pheromone information. 
+The World is built with one Graph/PheromoneContainer that represents "distances" and pheromones at the same time. 
+Each Node in the Graph has associated a set of Edges that connects it with other Nodes. Those Edges contain the 
+Distance and Pheromone information. 
 
 ````mermaid
 flowchart TB
@@ -101,10 +103,34 @@ which this node is connected:
 - relatedNodes (ArrayList<Integer>): contains the IDs of the connected nodes.
 
 ## Result example:
+For:
+- antNumber = 60
+- maxEdges = 100
+- alpha = 1., beta = 4.
+- maxIterations = 50
+- persistence = .9
+- initialPheromone = 0.
+- antPheromoneQuantity=10.
+```
+--------------------------------------------------------------------------
+| Iteration | ImageSaved | CurrentMin | MeanFitness | StandardDevFitness |
+--------------------------------------------------------------------------
+| 1         | true       | 1255.0454  | 2427.3864   | 918.2601           |
+| 2         | true       | 507.9967   | 919.2740    | 196.2754           |
+| 3         | true       | 483.1379   | 866.4462    | 193.4960           |
+| 4         | true       | 471.7590   | 899.5800    | 228.5353           |
+| 5         | true       | 471.7590   | 893.8129    | 180.0848           |
+| 6         | true       | 471.7590   | 963.6639    | 215.0524           |
+| 7         | true       | 469.0721   | 907.9243    | 233.4406           |
+| 8         | true       | 458.8652   | 934.1984    | 213.6528           |
+| 9         | true       | 458.8652   | 908.7556    | 233.8525           |
+| 10        | true       | 426.6002   | 883.9294    | 220.2153           |
+```
 
 ## Comment:
-This solution is tested against the oliver30 dataset. Notice that the bet solution for this problem is a 
-distance equals to 423.741, while in our solution, the distance is 425.820. This is not an amazing achievement,
-but we only run the algorithm for a few seconds with no hyper-parameter fine-tuning, so we are confident that better 
-solutions could be obtained. :scream_cat:
+This solution is tested against the oliver30 dataset. It's worth noting that the best solution for this problem has a 
+distance of 423.741, whereas in our solution, the distance is 426.6002. While this may not be an exceptional 
+achievement, it's important to consider that we only ran the algorithm for a few seconds without hyper-parameter 
+fine-tuning. This gives us confidence that with more time and parameter adjustments, better solutions can likely 
+be attained. :scream_cat:
 
