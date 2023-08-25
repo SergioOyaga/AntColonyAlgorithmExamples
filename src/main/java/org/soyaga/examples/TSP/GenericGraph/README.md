@@ -30,7 +30,7 @@ public Object getResult(Object ... resultArgs){...}
 The <i>optimize</i> method is inherited from the abstract class StatsAntColonyAlgorithm, which defines a basic optimization
 procedure. The <i>getResults</i> function computes and stores a GIF image.
 
-### [ImageStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/SparseMatrices/ImageStat.java)
+### [ImageStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/GenericGraph/ImageStat.java)
 This class implements Stat. This means that this class can be measured following a StatRetrievalPolicy. For this Stat,
 during its evaluation, an image is computed and stored using the best solution.
 
