@@ -135,6 +135,7 @@ public class ImageStat implements Stat {
                     (int) ((node2.getX()-this.minX)*scale+this.radius),
                     (int) ((node2.getY()-this.minY)*scale-imageHeight+this.radius));
             node1ID=node2ID;
+
         }
         graphics2D.setColor(Color.RED);
         tspNode node = this.worldMap.get((Integer) solution.getNodesVisited().get(0));
@@ -189,9 +190,10 @@ public class ImageStat implements Stat {
         graphics2D.setBackground(Color.DARK_GRAY);
         graphics2D.clearRect(0, 0, imageWidth, imageHeight);
         graphics2D.setColor(Color.GREEN);
-        AffineTransform at = AffineTransform.getScaleInstance(1, -1);
-        graphics2D.setTransform(at);
+        graphics2D.setFont(new Font("",Font.BOLD,20));
         for(tspNode node: this.worldMap.values()){
+            AffineTransform at = AffineTransform.getScaleInstance(1, -1);
+            graphics2D.setTransform(at);
             Double nodex= node.getX()-this.minX;
             Double nodey= node.getY()-this.minY;
             Shape shape = new Ellipse2D.Double(
@@ -200,6 +202,12 @@ public class ImageStat implements Stat {
                     2*this.radius,
                     2*this.radius);
             graphics2D.fill(shape);
+            at = new AffineTransform();
+            graphics2D.setTransform(at);
+            graphics2D.drawString(node.getID().toString(),
+                    (int) (nodex*this.scale+2*this.radius),
+                    (int) (-nodey*this.scale + this.imageHeight - 2*this.radius)
+            );
         }
         graphics2D.dispose();
         for(int i=0;i<2;i++) this.colonyImages.add(image);
@@ -207,6 +215,7 @@ public class ImageStat implements Stat {
         BufferedImage image2 = deepCopy(image);
         graphics2D = image2.createGraphics();
         graphics2D.setColor(Color.LIGHT_GRAY);
+        AffineTransform at = AffineTransform.getScaleInstance(1, -1);
         graphics2D.setTransform(at);
         Stroke dashed = new BasicStroke((float) this.imageHeight /3000, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL,
                 0, new float[]{(float) this.imageHeight /30}, 0);

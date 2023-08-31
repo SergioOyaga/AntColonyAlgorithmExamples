@@ -12,6 +12,7 @@ import org.soyaga.aco.SolutionConstructorPolicy.SimpleConstructorPolicy;
 import org.soyaga.aco.StatsRetrievalPolicy.NIterationsStatsRetrievalPolicy;
 import org.soyaga.aco.StatsRetrievalPolicy.Stat.CurrentMinFitnessStat;
 import org.soyaga.aco.StatsRetrievalPolicy.Stat.MeanSdFitnessStat;
+import org.soyaga.aco.StatsRetrievalPolicy.Stat.PheromoneContainerGIFStat;
 import org.soyaga.aco.StoppingPolicy.MaxIterationCriteriaPolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.AddPheromonePolicy.SolFitnessProportionalAddPheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.EvaporatePheromonePolicy.PercentageEvaporatePheromonePolicy;
@@ -36,23 +37,23 @@ public class RunDenseTspOptimization {
         Integer antNumber = 6;
         //Integer with the maximum number of edges an ant solution can have. This number has to ensure the
         // solution can be found.
-        Integer maxEdges = 10;
+        Integer maxEdges = 15;
         //Double with the penalization added to a solution when the build solution is not a real solution.
-        Double penalization = 100.;
+        Double penalization = 1000.;
         //Double with the ants Alpha (>0) parameter (importance of the edges pheromones against the edges distances).
         Double alpha = 1.;
         //Double with the ants Beta (>0) parameter (importance of the edges distances against the edges pheromones).
         Double beta = 2.;
         //Integer with the maximum number of iterations for the optimization to run.
-        Integer maxIterations = 50;
+        Integer maxIterations = 300;
         //Double with pheromone persistence in the edge.
         Double persistence = .9;
         //Double with initial pheromone present in the edge.
         Double initialPheromone = 0.;
         //Double with the amount of pheromone each ant can deposit in its track.
-        Double antPheromoneQuantity=10.;
+        Double antPheromoneQuantity=100.;
         //String with the path to the image we want to recreate, without the .png/.jpg, it is added by default.
-        String inputPath = "TSP/hexagonPath.csv";
+        String inputPath = "TSP/octagonPath.csv";
         //String with the path to the image we want to recreate, without the .png/.jpg, it is added by default.
         String outputPath = "src/out/TSP/image";
         //Integer with the scale to draw the image.
@@ -110,6 +111,10 @@ public class RunDenseTspOptimization {
                             add(new MeanSdFitnessStat(                          //Stat, colony mean and std fitness.
                                     4
                             ));
+                            add(new PheromoneContainerGIFStat(                  //Stat, Pheromone container representation.
+                                    world,
+                                    outputPath,
+                                    100.));
                         }},
                         outputPath,                                         //String, with the output path.
                         true,                                               //Boolean, print in console.

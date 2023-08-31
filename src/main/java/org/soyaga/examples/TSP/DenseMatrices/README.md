@@ -7,11 +7,15 @@ Solving the Travel Salesman Problem (TSP) using dense Arrays as base structure t
   </tr>
   <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagonGif.gif"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="400" height="342" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagon.png"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="400" height="342" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagonPheromoneGif.gif"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="400" height="342" /></td>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagon.png"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGoodGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGoodPheromoneGif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
+  </tr>
+  <tr>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonBadGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonBadPheromoneGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
   </tr>
   <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/50Gif.gif"  title="Solution for the 50Path" alt="Solution for the 50Path" width="400" height="342" /></td>
