@@ -11,7 +11,7 @@ Solving the Travel Salesman Problem (TSP) using dense Arrays as base structure t
   </tr>
   <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGoodGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGoodPheromoneGif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGoodPheromoneGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
   </tr>
   <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonBadGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
