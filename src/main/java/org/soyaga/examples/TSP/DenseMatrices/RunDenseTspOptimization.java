@@ -10,9 +10,7 @@ import org.soyaga.aco.Evaluable.Objective.PathDistanceObjectiveFunction;
 import org.soyaga.aco.Solution;
 import org.soyaga.aco.SolutionConstructorPolicy.SimpleConstructorPolicy;
 import org.soyaga.aco.StatsRetrievalPolicy.NIterationsStatsRetrievalPolicy;
-import org.soyaga.aco.StatsRetrievalPolicy.Stat.CurrentMinFitnessStat;
-import org.soyaga.aco.StatsRetrievalPolicy.Stat.MeanSdFitnessStat;
-import org.soyaga.aco.StatsRetrievalPolicy.Stat.PheromoneContainerGIFStat;
+import org.soyaga.aco.StatsRetrievalPolicy.Stat.*;
 import org.soyaga.aco.StoppingPolicy.MaxIterationCriteriaPolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.AddPheromonePolicy.SolFitnessProportionalAddPheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.EvaporatePheromonePolicy.PercentageEvaporatePheromonePolicy;
@@ -115,6 +113,12 @@ public class RunDenseTspOptimization {
                                     world,
                                     outputPath,
                                     100.));
+                            add(new PercentilePheromoneStat(4,      // Interpolated Percentile Fitness Stat.
+                                    new ArrayList<>(){{                             // Array of percentiles.
+                                        add(0);add(25);add(50);add(75);add(100);}}));   // Percentiles values.
+                            add(new PercentileFitnessStat(4,      // Interpolated Percentile Fitness Stat.
+                                    new ArrayList<>(){{                             // Array of percentiles.
+                                        add(0);add(25);add(50);add(75);add(100);}}));   // Percentiles values.
                         }},
                         outputPath,                                         //String, with the output path.
                         true,                                               //Boolean, print in console.

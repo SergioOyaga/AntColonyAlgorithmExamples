@@ -10,12 +10,21 @@ Solving the Travel Salesman Problem (TSP) using dense Arrays as base structure t
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/hexagonPheromoneGif.gif"  title="Solution for the HexagonPath" alt="Solution for the hexagonPath" width="400" height="342" /></td>
   </tr>
   <tr>
+    <th colspan="2"> <b>Octagon Path </b></th>
+  </tr>
+  <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGoodGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonGoodPheromoneGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
   </tr>
   <tr>
+    <th colspan="2"> <b>Octagon local minima Path </b></th>
+  </tr>
+  <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonBadGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/octagonBadPheromoneGif.gif"  title="Solution for the OctagonPath" alt="Solution for the octagonPath" width="400" height="342" /></td>
+  </tr>
+  <tr>
+    <th colspan="2"> <b>Pentacontagon Path </b></th>
   </tr>
   <tr>
     <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/TSP/50Gif.gif"  title="Solution for the 50Path" alt="Solution for the 50Path" width="400" height="342" /></td>
