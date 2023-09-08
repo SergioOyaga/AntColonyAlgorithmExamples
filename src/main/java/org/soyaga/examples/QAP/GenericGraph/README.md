@@ -178,6 +178,8 @@ the developer to store additional node information.
     BUILD SUCCESSFUL in 29s
     
   </td>
+  </tr>
+  <tr>
   <td>
   <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/QAP_solution.png"  title="Optimal solution" alt="Optimal solution" width="400" height="400" />
   </td>
