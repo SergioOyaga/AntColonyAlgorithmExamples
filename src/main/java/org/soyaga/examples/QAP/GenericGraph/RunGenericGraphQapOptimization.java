@@ -283,15 +283,15 @@ public class RunGenericGraphQapOptimization {
                 // Going from a facility to a location is assign a facility to a location.
                 // This heuristic "distance" is smaller (more attractive for the ant) when a high demanded facility is
                 // located in a centralized location.
-                heuristicInformation.computeIfAbsent(locationEntry.getKey(),key ->new HashMap<>()).put(
-                        facilityEntry.getKey(),locationEntry.getValue()/facilityEntry.getValue()
+                heuristicInformation.computeIfAbsent(facilityEntry.getKey(),key ->new HashMap<>()).put(
+                        locationEntry.getKey(),locationEntry.getValue()/facilityEntry.getValue()
                 );
                 // Going from a location to a facility is choosing the order in which we assign the locations.
                 // This heuristic information is 1 for all the cases because we want to allow the ants to find the order
                 // of assignment by their own. (We could have chosen some metric based on the facility relevance, like
                 // the more demanded the facility the more attractive to choose that facility as next).
-                heuristicInformation.computeIfAbsent(facilityEntry.getKey(), key -> new HashMap<>()).put(
-                        locationEntry.getKey(),1.
+                heuristicInformation.computeIfAbsent(locationEntry.getKey(), key -> new HashMap<>()).put(
+                        facilityEntry.getKey(),1.
                 );
             }
         }
