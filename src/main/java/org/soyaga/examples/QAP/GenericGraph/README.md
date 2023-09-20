@@ -61,7 +61,7 @@ The specific components for the RunGenericGraphQapOptimization are:
 - SimpleUpdatePheromonePolicy: A PheromonePolicy, first evaporate, then add.
   - MaxGlobalBestProportionalAddPolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
     best historical solution fitness up to a maximum limit.
-  - MaxElitistFitnessProportionalAddPolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
+  - MaxElitistFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
     N-best current solutions fitnesses up to a maximum limit.
   - MinPercentageEvaporatePheromonePolicy: An EvaporatePheromonePolicy that evaporates a certain percentage of the 
     pheromone on each edge down to a minimum.

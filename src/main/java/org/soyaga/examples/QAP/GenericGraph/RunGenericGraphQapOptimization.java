@@ -99,7 +99,7 @@ public class RunGenericGraphQapOptimization {
                 ),
                 new SimpleConstructorPolicy(),                          //ConstructorPolicy, ant by ant.
                 new SimpleUpdatePheromonePolicy(                        //UpdatePheromonePolicy, first evaporate then add:
-                        new MaxElitistFitnessProportionalAddPolicy(         //AddPheromonePolicy, prop to sol fitness:
+                        new MaxElitistFitnessProportionalAddPheromonePolicy(         //AddPheromonePolicy, prop to sol fitness:
                                 maxPheromone,                                   //Double, max pheromones.
                                 elitistNumber                                   //Double, elitist number.
                         ),
