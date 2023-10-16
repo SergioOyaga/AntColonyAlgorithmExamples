@@ -1,0 +1,13 @@
+location,description,x,y,costToBuyLand,restriction
+L1,Location in use by F1,250,333,0,F2
+L2,Location in use by F2,500,666,0,F3
+L3,Location in use by F3,750,333,0,
+L4,Potential location with airport,75,900,1000,
+L5,Potential location with airport,900,75,1000,
+L6,Potential location with train station,25,500,500,
+L7,Potential location with train station,500,25,700,
+L8,Potential location river up,400,200,200,
+L9,Potential location river down,975,825,400,
+L10,Potential location up in a mountain,75,75,1500,
+L11,Potential location,650,900,750,
+L12,Potential expensive location,500,500,10000,

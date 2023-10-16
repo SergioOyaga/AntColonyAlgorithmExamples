@@ -1,0 +1,10 @@
+facility,description,costToBuild,potentialLocation
+F1,fixed facility in L1,0,L1
+F2,fixed facility in L2,0,L2
+F3,fixed facility in L3,0,L3
+F4,potential big facility,1000,L6;L7;L8;L9;L11
+F5,potential big facility,1000,L6;L7;L8;L9;L11
+F6,potential facility,750,L4;L5;L6;L7;L8;L9;L10;L11;L12
+F7,potential facility,750,L4;L5;L6;L7;L8;L9;L10;L11;L12
+F8,potential small facility,500,L4;L5;L10;L11;L12
+F9,potential small facility,500,L4;L5;L10;L11;L12
