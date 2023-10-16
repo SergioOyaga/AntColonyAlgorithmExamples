@@ -25,7 +25,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * This class instantiates and optimizes a GenericGraphQapAntColonyAlgorithm object. It populates the object with all
+ * This class instantiates and optimizes a CustomQapAntColonyAlgorithm object. It populates the object with all
  * the necessary ACO classes required to perform the optimization. The optimization is carried out based on the
  * provided configuration, and GIFs/images of the results are generated.
  */
