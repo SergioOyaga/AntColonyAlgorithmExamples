@@ -59,27 +59,27 @@ distances, only cost, only transportation time and only distance.
   </tr>
   <tr>
     <td> Balanced.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Balance.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Balance.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Balance.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Balance.gif"  title="Best Solution." alt="Best Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Balance.gif"  title="Iteration Solution." alt="Iteration Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Balance.gif"  title="Pheromone." alt="Pheromone." width="300" height="300" /></td>
   </tr>
   <tr>
     <td> Costs.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Cost.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Cost.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Cost.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Cost.gif"  title="Best Solution." alt="Best Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Cost.gif"  title="Iteration Solution." alt="Iteration Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Cost.gif"  title="Pheromone." alt="Pheromone." width="300" height="300" /></td>
   </tr>
   <tr>
     <td> Times.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Time.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Time.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Time.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Time.gif"  title="Best Solution." alt="Best Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Time.gif"  title="Iteration Solution." alt="Iteration Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Time.gif"  title="Pheromone." alt="Pheromone." width="300" height="300" /></td>
   </tr>
   <tr>
     <td> Distances.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Dist.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Dist.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Dist.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Dist.gif"  title="Best Solution." alt="Best Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Dist.gif"  title="Iteration Solution." alt="Iteration Solution." width="300" height="300" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Dist.gif"  title="Pheromone." alt="Pheromone." width="300" height="300" /></td>
   </tr>
 </table>
 
