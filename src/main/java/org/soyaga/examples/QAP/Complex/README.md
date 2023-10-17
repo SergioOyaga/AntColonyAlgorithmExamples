@@ -88,6 +88,22 @@ scenario, we may wish to open different facilities in different locations. We pr
 balanced case. This will enable the business team to determine which case exhibits a more favorable outcome, and we 
 can then fine-tune the weights for each aspect of the multi-objective function.
 
+### Results Analysis
+In this section, we plot some graphs to analyze the results.
+<table>
+  <tr>
+    <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Custom_Cost.png"  title="Costs by scenario." alt="Costs by scenario." width="500" height="300" /> </td>
+    <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Custom_Dist.png"  title="Dist by scenario." alt="Dist by scenario." width="500" height="300" /> </td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Custom_Time.png"  title="Time by scenario." alt="Time by scenario." width="500" height="300" /> </td>
+    <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Custom_MeanTime.png"  title="Mean time by scenario." alt="Mean time by scenario." width="500" height="300" /> </td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Custom_Flow.png"  title="Flow by scenario." alt="Flow by scenario." width="500" height="300" /> </td>
+    <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Custom_MeanFlow.png"  title="Mean flow by scenario." alt="Mean flow by scenario." width="500" height="300" /> </td>
+  </tr>
+</table>
 
 ## In this folder:
 This folder contains 2 different classes that define the structures required for solving the problem.
