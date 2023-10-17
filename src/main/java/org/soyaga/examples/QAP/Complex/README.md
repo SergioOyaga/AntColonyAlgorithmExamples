@@ -52,7 +52,7 @@ distances, only cost, only transportation time and only distance.
 
 <table>
   <tr>
-    <th>Case.</th>
+    <th style="width: 90px">Case.</th>
     <th>Best solution.</th>
     <th>Iteration best solution.</th>
     <th>Pheromones.</th>
