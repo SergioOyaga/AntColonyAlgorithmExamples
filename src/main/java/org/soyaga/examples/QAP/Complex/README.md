@@ -18,25 +18,25 @@ reducing transportation times (for a better customer experience), and minimizing
 
 <table>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/java/resources/QAP/custom_map.png"  title="Locations Map." alt="Locations Map." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/custom_map.png"  title="Locations Map." alt="Locations Map." width="400" height="400" /></td>
     <td>
         The problem has the following properties:
         <ul>
           <li>There are twelve potential locations, each with different attributes. You can view the details in the following files: 
-<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/resources/QAP/customLocations.csv">Locations</a> 
+<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/customLocations.csv">Locations</a> 
 ,
-<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/resources/QAP/customLocationsDistances.csv">Distances</a> 
+<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/customLocationsDistances.csv">Distances</a> 
 ,
-<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/resources/QAP/customLocationsTimes.csv">TransportationTimes</a> 
+<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/customLocationsTimes.csv">TransportationTimes</a> 
 and
-<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/resources/QAP/customLocationsCosts.csv">TransportationCosts</a>.
+<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/customLocationsCosts.csv">TransportationCosts</a>.
           </li>
           <li> There are nine facilities, including three fixed facilities associated with specific locations and six potential 
 facilities that can be assigned to a set of specific locations as needed. Each facility has different properties. 
 You can view the details in the 
-<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/resources/QAP/customFacilities.csv">Facilities</a> 
+<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/customFacilities.csv">Facilities</a> 
 and
-<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/resources/QAP/customFacilitiesFlows.csv">Flows</a>
+<a href="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/customFacilitiesFlows.csv">Flows</a>
 files.
           </li>
         </ul> 
@@ -57,27 +57,27 @@ distances, only cost, only transportation time and only distance.
   </tr>
   <tr>
     <td> Balanced.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap_Custom_Balance.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap_Custom_Balance.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone_Custom_Balance.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Balance.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Balance.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Balance.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
   </tr>
   <tr>
     <td> Costs.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap_Custom_Cost.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap_Custom_Cost.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone_Custom_Cost.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Cost.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Cost.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Cost.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
   </tr>
   <tr>
     <td> Times.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap_Custom_Time.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap_Custom_Time.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone_Custom_Time.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Time.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Time.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Time.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
   </tr>
   <tr>
     <td> Distances.</td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap_Custom_Dist.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap_Custom_Dist.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone_Custom_Dist.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CustomMap__Custom_Dist.gif"  title="Best Solution." alt="Best Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/CurrentCustomMap__Custom_Dist.gif"  title="Iteration Solution." alt="Iteration Solution." width="400" height="400" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/QAP/Pheromone__Custom_Dist.gif"  title="Pheromone." alt="Pheromone." width="400" height="400" /></td>
   </tr>
 </table>
 
