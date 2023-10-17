@@ -19,7 +19,7 @@ reducing transportation times (for a better customer experience), and minimizing
 <table>
   <tr>
     <td style='width: 400px'> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/custom_map.png"  title="Locations Map." alt="Locations Map." width="400" height="400" /></td>
-    <td>
+    <td style='width: 600px'>
         The problem has the following properties:
         <ul>
           <li>There are twelve potential locations, each with different attributes. You can view the details in the following files: 
