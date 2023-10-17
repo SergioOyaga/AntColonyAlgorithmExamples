@@ -18,7 +18,7 @@ reducing transportation times (for a better customer experience), and minimizing
 
 <table>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/custom_map.png"  title="Locations Map." alt="Locations Map." width="400" height="400" /></td>
+    <td style='width: 400px'> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/resources/QAP/custom_map.png"  title="Locations Map." alt="Locations Map." width="400" height="400" /></td>
     <td>
         The problem has the following properties:
         <ul>
