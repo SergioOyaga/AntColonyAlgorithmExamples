@@ -13,7 +13,6 @@ import org.soyaga.aco.SolutionConstructorPolicy.SimpleConstructorPolicy;
 import org.soyaga.aco.StatsRetrievalPolicy.NIterationsStatsRetrievalPolicy;
 import org.soyaga.aco.StatsRetrievalPolicy.Stat.*;
 import org.soyaga.aco.StoppingPolicy.MaxIterationCriteriaPolicy;
-import org.soyaga.aco.UpdatePheromonePolicy.AddPheromonePolicy.MaxElitistFitnessProportionalAddPheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.AddPheromonePolicy.MaxGlobalBestFitnessProportionalAddPheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.EvaporatePheromonePolicy.MinPercentageEvaporatePheromonePolicy;
 import org.soyaga.aco.UpdatePheromonePolicy.SimpleUpdatePheromonePolicy;
@@ -119,7 +118,6 @@ public class RunCustomQapOptimization {
         //////////////////////////////////////////////////////////
         //   AddPheromonePolicy (inside UpdatePheromonePolicy)  //
         //////////////////////////////////////////////////////////
-        int elitistNumber = antNumber/10;    //Integer with the number of ants that are going to update their trails.
         Double maxPheromone = 1.;   //Double with max pheromone an edge can have.
 
         /////////////////////////////////////////////////////////////
@@ -183,10 +181,6 @@ public class RunCustomQapOptimization {
                         new MaxGlobalBestFitnessProportionalAddPheromonePolicy( //AddPheromonePolicy, prop to sol fitness:
                                 maxPheromone                                        //Double, max pheromones.
                         ),
-                        //new MaxElitistFitnessProportionalAddPheromonePolicy(    //AddPheromonePolicy, prop to sol fitness:
-                        //        maxPheromone,                                       //Double, max pheromones.
-                        //        elitistNumber                                       //Double, elitist number.
-                        //),
                         new MinPercentageEvaporatePheromonePolicy(          //EvaporatePheromonePolicy, percentage persistence:
                                 persistence,                                    //Double, persistence.
                                 minPheromone)                                   // Double, min pheromone.

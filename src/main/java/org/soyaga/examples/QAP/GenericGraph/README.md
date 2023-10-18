@@ -27,7 +27,7 @@ serve as an example of how a simple change can significantly alter the behavior 
 ## In this folder:
 This folder contains 2 different classes that define the structures required for solving the problem.
 These classes implement their respective interfaces from OptimizationLib.aco.
-1. [GenericGraphQapAntColonyAlgorithm](#genericgraphqapantcolonyalgorithm): Extends SimpleAntColonyAlgorithm.
+1. [GenericGraphQapAntColonyAlgorithm](#genericgraphqapantcolonyalgorithm): Extends StatsAntColonyAlgorithm.
 2. [RunGenericGraphQapOptimization](#rungenericgraphqapoptimization): The main class for instantiation and optimization.
 
 ### [GenericGraphQapAntColonyAlgorithm](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/QAP/GenericGraph/GenericGraphQapAntColonyAlgorithm.java):
@@ -42,12 +42,12 @@ The <i>optimize</i> method is inherited from the abstract class StatsAntColonyAl
 procedure. The <i>getResults</i> function returns a String that will be printed in the screen with the assignations.
 
 ### [RunGenericGraphQapOptimization](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/QAP/GenericGraph/RunGenericGraphQapOptimization.java):
-This is the main class. Is where the run starts. As simple as instantiate the RunGenericGraphTspOptimization object 
+This is the main class. Is where the run starts. As simple as instantiate the RunGenericGraphQapOptimization object 
 (previously defined) filled with its components, optimize it, and retrieve the results.
 
 The specific components for the RunGenericGraphQapOptimization are:
 - GenericWorld: A World that contains a Graph and a PheromoneContainer.
-  - GenericGraph: A Graph that stores the "distance" and pheromone ingo in a graph like object.
+  - GenericGraph: A Graph that stores the "distance" and pheromone into in a graph like object.
 - Colony.
 - MaxIterationCriteriaPolicy: A StoppingCriteria based on a maximum number of iterations.
 - ACOInitializer: An Initializer that creates N ants in a colony.
@@ -59,7 +59,7 @@ The specific components for the RunGenericGraphQapOptimization are:
     - RandomProportionalEdgeSelector: An EdgeSelector that allows the ant to choose between the available edges.
 - SimpleConstructorPolicy: A ConstructorPolicy, ant by ant build the solution.
 - SimpleUpdatePheromonePolicy: A PheromonePolicy, first evaporate, then add.
-  - MaxGlobalBestProportionalAddPolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
+  - MaxGlobalBestFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
     best historical solution fitness up to a maximum limit.
   - MaxElitistFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
     N-best current solutions fitnesses up to a maximum limit.
