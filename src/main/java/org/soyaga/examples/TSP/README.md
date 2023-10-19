@@ -40,7 +40,6 @@ Nonetheless, we don't impose the use of these structures; you are free to adopt 
 that suits your needs. You can opt for more sophisticated structures that align better with your design; you just need 
 to adhere to the requisite interfaces.
 
-
 ## Comment:
 The examples provided in these directories serve solely to showcase the capabilities of ACOs and the user-friendly
 implementation afforded by the aco library within the OptimizationLib framework. The problem at hand is addressed using 
