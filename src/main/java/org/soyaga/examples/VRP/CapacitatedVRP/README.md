@@ -18,7 +18,7 @@ This folder contains 3 different folders that define the structures required for
 4. [Controller](#controller): Class that controls the interaction between the frontend (GUI) and the backend (ACO). It also makes the calls to the Google's API (ApiCall)
 5. [RunCapacitatedVRP](#runcapacitatedvrp): Main class that initiates the program.
 
-### [ACO](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/ACO):
+### [ACO](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO):
 This folder contains all the classes that needed to build the optimization problem.
 
 ### [GUI](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI):
