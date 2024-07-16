@@ -6,7 +6,7 @@ This folder is the frontend of the Capacitated Vehicle Routing problem.
     <th> <b>UI Design </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/gui_test_design.png"  title="UI design." alt="UI design." /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/GUI_test_design.png"  title="UI design." alt="UI design." /></td>
   </tr>
 </table>
 
@@ -107,7 +107,7 @@ The example simply consists of:
     <th> <b>UI Design </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/gui_test_exaplan.gif"  title="UI test." alt="UI test." /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/GUI_test_exaplan.mp4"  title="UI test." alt="UI test." /></td>
   </tr>
 </table>
 We see that the front allows the user to perform basic actions and that the events are triggered accordingly. We also see that the Stats in the table are automatically updated (it is a meaningless update in this case)
