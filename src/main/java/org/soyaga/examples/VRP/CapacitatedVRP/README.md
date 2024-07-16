@@ -53,5 +53,24 @@ This is the main class. Is where the run starts. As simple as instantiate the Co
 
 We see one example using the Googles' api to compute the distance matrix between nodes and to compute of routes between nodes. On the other hand, we see another example using the Haversine distances to compute the distance matrix between nodes and straight lines to draw the routes.
 
+
+<table>
+    <tr>
+        <th>Api Usage</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/Googles_Api_Usage.png"  title="Usage." alt="Usage." /></td>
+    </tr>
+    <tr>
+        <th>Cost of the Google Api call</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/Googles_Api_Cost.png"  title="Cost." alt="Cost." /></td>
+    </tr>
+</table>
+In the table above the cost to use the Googles Api is shown.
+Keep in mind that for the example, we called the API every time the ACO finds a new solution.
+Ideally, we would call the API only once the solution has converged, leading to notably lower costs.
+
 ## Comment:
 This CVRP is a classical example that uses the classes and structures of the OptimizationLib.aco package. It is a sample that mixes real time optimization with user interface modifications and API call responses. :scream_cat:
