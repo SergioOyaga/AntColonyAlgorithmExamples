@@ -6,7 +6,7 @@ This folder is the backend of the Capacitated Vehicle Routing problem.
     <th> <b>Graph Design </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/vrp_nodes_exaplanation.png"  title="Graph design." alt="Graph design." width="750" height="750" /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/vrp_nodes_exaplanation.png"  title="Graph design." alt="Graph design." /></td>
   </tr>
 </table>
 
