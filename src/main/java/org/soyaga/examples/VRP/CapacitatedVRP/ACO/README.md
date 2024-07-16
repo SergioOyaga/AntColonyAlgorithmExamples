@@ -70,16 +70,16 @@ Class that extends Edge. Includes information about the real distances and durat
 
 ### [Objectives](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Objectives)
 Four classes that compose the multi-objective solution.
-1. [CostObjective](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Objectives/CostObjectives.java): Depending on the Truck used for each route, the cost might vary. It includes a variable and a fixed cost per truck.
+1. [CostObjective](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Objectives/CostObjective.java): Depending on the Truck used for each route, the cost might vary. It includes a variable and a fixed cost per truck.
 2. [DistanceObjective](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Objectives/DistanceObjective.java): Computes the total distance covered by all the trucks.
 3. [TimeObjective](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Objectives/TimeObjective.java): Compares the total working time for all trucks and returns the biggest one.
 4. [ReloadPenalization](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Objectives/ReloadPenalization.java): Counts the number of reloads that are made by the trucks and penalize them slightly.
 
-### [Stats](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/Stats)
+### [Stats](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Stats)
 This folder contains two classes that compute 2 stats:
-1. [ImageStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/Stats/ImageStat.java):
+1. [ImageStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Stats/ImageStat.java):
    Stat that updates the pheromone image and fires an event to the CapacitatedVRPColonyAlgorithm that communicates this update to the outside world.
-2. [RouteChangeStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/Stats/RouteChangeStat.java):
+2. [RouteChangeStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/Stats/RouteChangeStat.java):
    Stat that updates the best current solution and fires an event to the CapacitatedVRPColonyAlgorithm that communicates this update to the outside world.
 
 ### [MultiRouteSolution](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/ACO/MultiRouteSolution.java)
