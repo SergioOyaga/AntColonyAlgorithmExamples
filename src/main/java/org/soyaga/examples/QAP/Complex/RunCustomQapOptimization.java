@@ -105,7 +105,7 @@ public class RunCustomQapOptimization {
         computeObjectives(distanceWeight,timeWeight,costWeight,objectiveArray,weights, facilitiesById,locationsById);
 
         //////////////////////////////////////////////////////////
-        //           Feasibility (inside Solution)              //
+        //           Constraints (inside Solution)              //
         //////////////////////////////////////////////////////////
         Double minFlow=8000.;   //Double with the minimum flow in the system. Used in a Constraint.
         Double maxFlow = 10000.; //Double with the maximum flow in the system. Used in a Constraint.

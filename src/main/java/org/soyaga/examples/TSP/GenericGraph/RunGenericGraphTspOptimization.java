@@ -73,7 +73,7 @@ public class RunGenericGraphTspOptimization {
                         new SimpleMemoryAnt(                                      //Ant, SimpleMemoryAnt:
                                 new Solution(                                   //Solution:
                                         new PathDistanceObjectiveFunction(),        //Objective function, path distance.
-                                        null,                                       //Feasibility function, none.
+                                        null,                                       //Constraints function, none.
                                         null,                                       //Double, penalization, none.
                                         maxEdges,                                   //Integer, max number of edges.
                                         new AllNodesCircleBuilderEvaluator(           //Builder evaluator, line, all nodes:

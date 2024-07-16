@@ -82,7 +82,7 @@ public class RunGenericGraphQapOptimization {
                                                 facilitiesFlows,                        //HashMap<NodeOrig,HashMap<NodeDest,flow>>, flow.
                                                 true                                    //Boolean, facilities assigned to locations.
                                         ),
-                                        null,                                       //Feasibility function, none.
+                                        null,                                       //Constraints function, none.
                                         null,                                       //Double, penalization, none.
                                         maxEdges,                                   //Integer, max number of edges.
                                         new AllNodesCircleBuilderEvaluator(         //Builder evaluator, circle, all nodes:

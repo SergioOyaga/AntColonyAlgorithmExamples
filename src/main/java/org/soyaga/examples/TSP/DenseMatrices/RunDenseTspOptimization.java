@@ -75,7 +75,7 @@ public class RunDenseTspOptimization {
                         new SimpleAnt(                                      //Ant, SimpleMemoryAnt:
                                 new Solution(                                   //Solution:
                                         new PathDistanceObjectiveFunction(),        //Objective function, path distance.
-                                        new AllNodesCircleFeasibilityFunction(),    //Feasibility function, none.
+                                        new AllNodesCircleFeasibilityFunction(),    //Constraints function, none.
                                         penalization,                               //Double, penalization, none.
                                         maxEdges,                                   //Integer, max number of edges.
                                         new AllNodesCircleBuilderEvaluator(           //Builder evaluator, line, all nodes:
