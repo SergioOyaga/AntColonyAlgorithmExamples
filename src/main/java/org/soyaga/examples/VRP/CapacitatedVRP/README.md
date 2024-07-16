@@ -59,7 +59,7 @@ We see one example using the Googles' api to compute the distance matrix between
         <th>Api Usage</th>
     </tr>
     <tr>
-        <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/Googles_Api_Usage.png"  title="Usage." alt="Usage." /></td>
+        <td><img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/Googles_api_Usage.png"  title="Usage." alt="Usage." /></td>
     </tr>
     <tr>
         <th>Cost of the Google Api call</th>
