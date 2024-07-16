@@ -1,0 +1,3082 @@
+{
+    "Way19": {
+        "Way18": {
+            "duration": 855,
+            "distance": 3413
+        },
+        "Way17": {
+            "duration": 1023,
+            "distance": 4549
+        },
+        "Way16": {
+            "duration": 694,
+            "distance": 2976
+        },
+        "Way15": {
+            "duration": 2082,
+            "distance": 22842
+        },
+        "Way14": {
+            "duration": 480,
+            "distance": 1393
+        },
+        "Way13": {
+            "duration": 826,
+            "distance": 3421
+        },
+        "Way12": {
+            "duration": 512,
+            "distance": 1477
+        },
+        "Way11": {
+            "duration": 285,
+            "distance": 883
+        },
+        "Way10": {
+            "duration": 953,
+            "distance": 4217
+        },
+        "Way08": {
+            "duration": 1442,
+            "distance": 6449
+        },
+        "Way07": {
+            "duration": 1166,
+            "distance": 10664
+        },
+        "Way06": {
+            "duration": 618,
+            "distance": 1779
+        },
+        "Way28": {
+            "duration": 343,
+            "distance": 1391
+        },
+        "Way05": {
+            "duration": 918,
+            "distance": 3498
+        },
+        "Way27": {
+            "duration": 538,
+            "distance": 1963
+        },
+        "Way04": {
+            "duration": 608,
+            "distance": 2290
+        },
+        "Way26": {
+            "duration": 702,
+            "distance": 2543
+        },
+        "Way25": {
+            "duration": 940,
+            "distance": 3739
+        },
+        "Way03": {
+            "duration": 533,
+            "distance": 2228
+        },
+        "Way24": {
+            "duration": 1518,
+            "distance": 5874
+        },
+        "Way02": {
+            "duration": 970,
+            "distance": 3564
+        },
+        "Way01": {
+            "duration": 627,
+            "distance": 2626
+        },
+        "Way23": {
+            "duration": 507,
+            "distance": 1877
+        },
+        "Way09": {
+            "duration": 373,
+            "distance": 1162
+        },
+        "Way22": {
+            "duration": 507,
+            "distance": 1877
+        },
+        "Way21": {
+            "duration": 1126,
+            "distance": 4878
+        },
+        "Way20": {
+            "duration": 740,
+            "distance": 3180
+        }
+    },
+    "Way18": {
+        "Way19": {
+            "duration": 558,
+            "distance": 2048
+        },
+        "Way17": {
+            "duration": 796,
+            "distance": 3658
+        },
+        "Way16": {
+            "duration": 1002,
+            "distance": 3538
+        },
+        "Way15": {
+            "duration": 2178,
+            "distance": 12205
+        },
+        "Way14": {
+            "duration": 972,
+            "distance": 3307
+        },
+        "Way13": {
+            "duration": 599,
+            "distance": 2530
+        },
+        "Way12": {
+            "duration": 566,
+            "distance": 1869
+        },
+        "Way11": {
+            "duration": 777,
+            "distance": 2797
+        },
+        "Way10": {
+            "duration": 727,
+            "distance": 3326
+        },
+        "Way08": {
+            "duration": 1238,
+            "distance": 5760
+        },
+        "Way07": {
+            "duration": 1024,
+            "distance": 5693
+        },
+        "Way28": {
+            "duration": 965,
+            "distance": 4459
+        },
+        "Way06": {
+            "duration": 671,
+            "distance": 2172
+        },
+        "Way27": {
+            "duration": 1015,
+            "distance": 4778
+        },
+        "Way05": {
+            "duration": 110,
+            "distance": 353
+        },
+        "Way26": {
+            "duration": 1180,
+            "distance": 5358
+        },
+        "Way04": {
+            "duration": 723,
+            "distance": 2866
+        },
+        "Way03": {
+            "duration": 560,
+            "distance": 1963
+        },
+        "Way25": {
+            "duration": 796,
+            "distance": 3206
+        },
+        "Way02": {
+            "duration": 1311,
+            "distance": 5341
+        },
+        "Way24": {
+            "duration": 1388,
+            "distance": 5105
+        },
+        "Way01": {
+            "duration": 968,
+            "distance": 4403
+        },
+        "Way23": {
+            "duration": 264,
+            "distance": 1027
+        },
+        "Way09": {
+            "duration": 427,
+            "distance": 1554
+        },
+        "Way22": {
+            "duration": 264,
+            "distance": 1027
+        },
+        "Way21": {
+            "duration": 916,
+            "distance": 4168
+        },
+        "Way20": {
+            "duration": 1014,
+            "distance": 4541
+        }
+    },
+    "Way17": {
+        "Way19": {
+            "duration": 950,
+            "distance": 4697
+        },
+        "Way18": {
+            "duration": 842,
+            "distance": 4093
+        },
+        "Way16": {
+            "duration": 1023,
+            "distance": 9631
+        },
+        "Way15": {
+            "duration": 2101,
+            "distance": 20991
+        },
+        "Way14": {
+            "duration": 1146,
+            "distance": 6464
+        },
+        "Way13": {
+            "duration": 258,
+            "distance": 862
+        },
+        "Way12": {
+            "duration": 1052,
+            "distance": 4370
+        },
+        "Way11": {
+            "duration": 1155,
+            "distance": 6712
+        },
+        "Way10": {
+            "duration": 70,
+            "distance": 332
+        },
+        "Way08": {
+            "duration": 869,
+            "distance": 5920
+        },
+        "Way07": {
+            "duration": 342,
+            "distance": 3274
+        },
+        "Way06": {
+            "duration": 1158,
+            "distance": 4673
+        },
+        "Way28": {
+            "duration": 1144,
+            "distance": 10115
+        },
+        "Way05": {
+            "duration": 812,
+            "distance": 3588
+        },
+        "Way27": {
+            "duration": 1231,
+            "distance": 10737
+        },
+        "Way26": {
+            "duration": 1245,
+            "distance": 11281
+        },
+        "Way04": {
+            "duration": 990,
+            "distance": 4666
+        },
+        "Way03": {
+            "duration": 823,
+            "distance": 3790
+        },
+        "Way25": {
+            "duration": 853,
+            "distance": 3429
+        },
+        "Way02": {
+            "duration": 1482,
+            "distance": 10287
+        },
+        "Way24": {
+            "duration": 1036,
+            "distance": 3993
+        },
+        "Way01": {
+            "duration": 1235,
+            "distance": 6204
+        },
+        "Way23": {
+            "duration": 834,
+            "distance": 3153
+        },
+        "Way09": {
+            "duration": 913,
+            "distance": 4055
+        },
+        "Way22": {
+            "duration": 834,
+            "distance": 3153
+        },
+        "Way21": {
+            "duration": 892,
+            "distance": 3992
+        },
+        "Way20": {
+            "duration": 727,
+            "distance": 3860
+        }
+    },
+    "Way16": {
+        "Way19": {
+            "duration": 721,
+            "distance": 3275
+        },
+        "Way18": {
+            "duration": 803,
+            "distance": 3284
+        },
+        "Way17": {
+            "duration": 973,
+            "distance": 9578
+        },
+        "Way15": {
+            "duration": 2088,
+            "distance": 24565
+        },
+        "Way14": {
+            "duration": 445,
+            "distance": 1356
+        },
+        "Way13": {
+            "duration": 991,
+            "distance": 5879
+        },
+        "Way12": {
+            "duration": 1192,
+            "distance": 4754
+        },
+        "Way11": {
+            "duration": 543,
+            "distance": 1575
+        },
+        "Way10": {
+            "duration": 1004,
+            "distance": 6338
+        },
+        "Way08": {
+            "duration": 1426,
+            "distance": 18452
+        },
+        "Way07": {
+            "duration": 982,
+            "distance": 9848
+        },
+        "Way06": {
+            "duration": 1297,
+            "distance": 5057
+        },
+        "Way28": {
+            "duration": 571,
+            "distance": 2532
+        },
+        "Way27": {
+            "duration": 659,
+            "distance": 3154
+        },
+        "Way05": {
+            "duration": 865,
+            "distance": 3369
+        },
+        "Way26": {
+            "duration": 823,
+            "distance": 3734
+        },
+        "Way04": {
+            "duration": 1135,
+            "distance": 5307
+        },
+        "Way25": {
+            "duration": 1242,
+            "distance": 7228
+        },
+        "Way03": {
+            "duration": 1041,
+            "distance": 5031
+        },
+        "Way24": {
+            "duration": 1684,
+            "distance": 10944
+        },
+        "Way02": {
+            "duration": 1494,
+            "distance": 6581
+        },
+        "Way23": {
+            "duration": 782,
+            "distance": 3589
+        },
+        "Way01": {
+            "duration": 973,
+            "distance": 4298
+        },
+        "Way09": {
+            "duration": 1053,
+            "distance": 4439
+        },
+        "Way22": {
+            "duration": 782,
+            "distance": 3589
+        },
+        "Way21": {
+            "duration": 1379,
+            "distance": 8147
+        },
+        "Way20": {
+            "duration": 687,
+            "distance": 3051
+        }
+    },
+    "Way15": {
+        "Way19": {
+            "duration": 2210,
+            "distance": 14166
+        },
+        "Way18": {
+            "duration": 2175,
+            "distance": 24429
+        },
+        "Way17": {
+            "duration": 1920,
+            "distance": 21246
+        },
+        "Way16": {
+            "duration": 2116,
+            "distance": 24081
+        },
+        "Way14": {
+            "duration": 2091,
+            "distance": 23847
+        },
+        "Way13": {
+            "duration": 1882,
+            "distance": 20938
+        },
+        "Way12": {
+            "duration": 2348,
+            "distance": 13863
+        },
+        "Way11": {
+            "duration": 2189,
+            "distance": 24066
+        },
+        "Way10": {
+            "duration": 1975,
+            "distance": 21237
+        },
+        "Way08": {
+            "duration": 1501,
+            "distance": 11673
+        },
+        "Way07": {
+            "duration": 2001,
+            "distance": 23661
+        },
+        "Way06": {
+            "duration": 2453,
+            "distance": 14166
+        },
+        "Way28": {
+            "duration": 2146,
+            "distance": 23021
+        },
+        "Way05": {
+            "duration": 2263,
+            "distance": 24701
+        },
+        "Way27": {
+            "duration": 2109,
+            "distance": 22574
+        },
+        "Way04": {
+            "duration": 1839,
+            "distance": 11817
+        },
+        "Way26": {
+            "duration": 2246,
+            "distance": 23155
+        },
+        "Way03": {
+            "duration": 1905,
+            "distance": 12381
+        },
+        "Way25": {
+            "duration": 1626,
+            "distance": 9285
+        },
+        "Way02": {
+            "duration": 1680,
+            "distance": 11072
+        },
+        "Way24": {
+            "duration": 2039,
+            "distance": 11885
+        },
+        "Way23": {
+            "duration": 2008,
+            "distance": 12991
+        },
+        "Way01": {
+            "duration": 1737,
+            "distance": 12711
+        },
+        "Way09": {
+            "duration": 2209,
+            "distance": 13548
+        },
+        "Way22": {
+            "duration": 2008,
+            "distance": 12991
+        },
+        "Way21": {
+            "duration": 1527,
+            "distance": 8891
+        },
+        "Way20": {
+            "duration": 2060,
+            "distance": 24196
+        }
+    },
+    "Way14": {
+        "Way19": {
+            "duration": 444,
+            "distance": 1341
+        },
+        "Way18": {
+            "duration": 604,
+            "distance": 2499
+        },
+        "Way17": {
+            "duration": 987,
+            "distance": 4537
+        },
+        "Way16": {
+            "duration": 455,
+            "distance": 1670
+        },
+        "Way15": {
+            "duration": 2122,
+            "distance": 24681
+        },
+        "Way13": {
+            "duration": 905,
+            "distance": 3746
+        },
+        "Way12": {
+            "duration": 950,
+            "distance": 2994
+        },
+        "Way11": {
+            "duration": 98,
+            "distance": 219
+        },
+        "Way10": {
+            "duration": 917,
+            "distance": 4205
+        },
+        "Way08": {
+            "duration": 1453,
+            "distance": 16739
+        },
+        "Way07": {
+            "duration": 945,
+            "distance": 5769
+        },
+        "Way28": {
+            "duration": 470,
+            "distance": 1652
+        },
+        "Way06": {
+            "duration": 240,
+            "distance": 630
+        },
+        "Way05": {
+            "duration": 667,
+            "distance": 2584
+        },
+        "Way27": {
+            "duration": 676,
+            "distance": 2439
+        },
+        "Way26": {
+            "duration": 840,
+            "distance": 3019
+        },
+        "Way04": {
+            "duration": 953,
+            "distance": 3567
+        },
+        "Way25": {
+            "duration": 1156,
+            "distance": 5095
+        },
+        "Way03": {
+            "duration": 859,
+            "distance": 3291
+        },
+        "Way24": {
+            "duration": 1683,
+            "distance": 6877
+        },
+        "Way02": {
+            "duration": 1321,
+            "distance": 4717
+        },
+        "Way01": {
+            "duration": 982,
+            "distance": 3525
+        },
+        "Way23": {
+            "duration": 584,
+            "distance": 2804
+        },
+        "Way09": {
+            "duration": 811,
+            "distance": 2679
+        },
+        "Way22": {
+            "duration": 584,
+            "distance": 2804
+        },
+        "Way21": {
+            "duration": 1293,
+            "distance": 6014
+        },
+        "Way20": {
+            "duration": 489,
+            "distance": 2267
+        }
+    },
+    "Way13": {
+        "Way19": {
+            "duration": 1037,
+            "distance": 4774
+        },
+        "Way18": {
+            "duration": 977,
+            "distance": 4012
+        },
+        "Way17": {
+            "duration": 337,
+            "distance": 1129
+        },
+        "Way16": {
+            "duration": 1193,
+            "distance": 4936
+        },
+        "Way15": {
+            "duration": 1936,
+            "distance": 20345
+        },
+        "Way14": {
+            "duration": 1208,
+            "distance": 4487
+        },
+        "Way12": {
+            "duration": 1138,
+            "distance": 4447
+        },
+        "Way11": {
+            "duration": 1217,
+            "distance": 4736
+        },
+        "Way10": {
+            "duration": 267,
+            "distance": 797
+        },
+        "Way08": {
+            "duration": 765,
+            "distance": 4744
+        },
+        "Way07": {
+            "duration": 680,
+            "distance": 4402
+        },
+        "Way28": {
+            "duration": 1319,
+            "distance": 6336
+        },
+        "Way06": {
+            "duration": 1244,
+            "distance": 4750
+        },
+        "Way27": {
+            "duration": 1369,
+            "distance": 6656
+        },
+        "Way05": {
+            "duration": 987,
+            "distance": 3983
+        },
+        "Way26": {
+            "duration": 1486,
+            "distance": 9179
+        },
+        "Way04": {
+            "duration": 1076,
+            "distance": 4743
+        },
+        "Way25": {
+            "duration": 939,
+            "distance": 3506
+        },
+        "Way03": {
+            "duration": 909,
+            "distance": 3867
+        },
+        "Way24": {
+            "duration": 871,
+            "distance": 3347
+        },
+        "Way02": {
+            "duration": 1378,
+            "distance": 9111
+        },
+        "Way01": {
+            "duration": 1321,
+            "distance": 6280
+        },
+        "Way23": {
+            "duration": 920,
+            "distance": 3230
+        },
+        "Way09": {
+            "duration": 1000,
+            "distance": 4132
+        },
+        "Way22": {
+            "duration": 920,
+            "distance": 3230
+        },
+        "Way21": {
+            "duration": 795,
+            "distance": 5547
+        },
+        "Way20": {
+            "duration": 861,
+            "distance": 3779
+        }
+    },
+    "Way12": {
+        "Way19": {
+            "duration": 706,
+            "distance": 2593
+        },
+        "Way18": {
+            "duration": 578,
+            "distance": 2483
+        },
+        "Way17": {
+            "duration": 961,
+            "distance": 4521
+        },
+        "Way16": {
+            "duration": 429,
+            "distance": 1654
+        },
+        "Way15": {
+            "duration": 2096,
+            "distance": 24665
+        },
+        "Way14": {
+            "duration": 461,
+            "distance": 1456
+        },
+        "Way13": {
+            "duration": 878,
+            "distance": 3730
+        },
+        "Way11": {
+            "duration": 559,
+            "distance": 1675
+        },
+        "Way10": {
+            "duration": 891,
+            "distance": 4189
+        },
+        "Way08": {
+            "duration": 1427,
+            "distance": 16723
+        },
+        "Way07": {
+            "duration": 919,
+            "distance": 5753
+        },
+        "Way06": {
+            "duration": 99,
+            "distance": 288
+        },
+        "Way28": {
+            "duration": 727,
+            "distance": 3357
+        },
+        "Way05": {
+            "duration": 641,
+            "distance": 2568
+        },
+        "Way27": {
+            "duration": 815,
+            "distance": 3979
+        },
+        "Way26": {
+            "duration": 822,
+            "distance": 4519
+        },
+        "Way04": {
+            "duration": 1017,
+            "distance": 4627
+        },
+        "Way25": {
+            "duration": 1129,
+            "distance": 5079
+        },
+        "Way03": {
+            "duration": 854,
+            "distance": 3724
+        },
+        "Way02": {
+            "duration": 1650,
+            "distance": 7407
+        },
+        "Way24": {
+            "duration": 1656,
+            "distance": 6861
+        },
+        "Way23": {
+            "duration": 558,
+            "distance": 2788
+        },
+        "Way01": {
+            "duration": 1130,
+            "distance": 5124
+        },
+        "Way09": {
+            "duration": 721,
+            "distance": 3315
+        },
+        "Way22": {
+            "duration": 558,
+            "distance": 2788
+        },
+        "Way21": {
+            "duration": 1266,
+            "distance": 5998
+        },
+        "Way20": {
+            "duration": 463,
+            "distance": 2250
+        }
+    },
+    "Way11": {
+        "Way19": {
+            "duration": 747,
+            "distance": 2686
+        },
+        "Way18": {
+            "duration": 620,
+            "distance": 2576
+        },
+        "Way17": {
+            "duration": 1002,
+            "distance": 4614
+        },
+        "Way16": {
+            "duration": 470,
+            "distance": 1747
+        },
+        "Way15": {
+            "duration": 2137,
+            "distance": 24758
+        },
+        "Way14": {
+            "duration": 503,
+            "distance": 1549
+        },
+        "Way13": {
+            "duration": 920,
+            "distance": 3823
+        },
+        "Way12": {
+            "duration": 901,
+            "distance": 3723
+        },
+        "Way10": {
+            "duration": 932,
+            "distance": 4282
+        },
+        "Way08": {
+            "duration": 1469,
+            "distance": 16816
+        },
+        "Way07": {
+            "duration": 960,
+            "distance": 5846
+        },
+        "Way06": {
+            "duration": 129,
+            "distance": 381
+        },
+        "Way28": {
+            "duration": 769,
+            "distance": 3450
+        },
+        "Way27": {
+            "duration": 856,
+            "distance": 4072
+        },
+        "Way05": {
+            "duration": 682,
+            "distance": 2661
+        },
+        "Way04": {
+            "duration": 1058,
+            "distance": 4720
+        },
+        "Way26": {
+            "duration": 863,
+            "distance": 4612
+        },
+        "Way03": {
+            "duration": 895,
+            "distance": 3817
+        },
+        "Way25": {
+            "duration": 1171,
+            "distance": 5172
+        },
+        "Way02": {
+            "duration": 1691,
+            "distance": 7500
+        },
+        "Way24": {
+            "duration": 1698,
+            "distance": 6954
+        },
+        "Way01": {
+            "duration": 1171,
+            "distance": 5217
+        },
+        "Way23": {
+            "duration": 599,
+            "distance": 2881
+        },
+        "Way09": {
+            "duration": 762,
+            "distance": 3408
+        },
+        "Way22": {
+            "duration": 599,
+            "distance": 2881
+        },
+        "Way21": {
+            "duration": 1308,
+            "distance": 6091
+        },
+        "Way20": {
+            "duration": 504,
+            "distance": 2343
+        }
+    },
+    "Way10": {
+        "Way19": {
+            "duration": 881,
+            "distance": 4365
+        },
+        "Way18": {
+            "duration": 773,
+            "distance": 3762
+        },
+        "Way17": {
+            "duration": 70,
+            "distance": 332
+        },
+        "Way16": {
+            "duration": 1033,
+            "distance": 5962
+        },
+        "Way15": {
+            "duration": 2031,
+            "distance": 20659
+        },
+        "Way14": {
+            "duration": 1048,
+            "distance": 5513
+        },
+        "Way13": {
+            "duration": 188,
+            "distance": 531
+        },
+        "Way12": {
+            "duration": 982,
+            "distance": 4038
+        },
+        "Way11": {
+            "duration": 1057,
+            "distance": 5762
+        },
+        "Way08": {
+            "duration": 839,
+            "distance": 5059
+        },
+        "Way07": {
+            "duration": 412,
+            "distance": 3605
+        },
+        "Way06": {
+            "duration": 1088,
+            "distance": 4341
+        },
+        "Way28": {
+            "duration": 1163,
+            "distance": 5928
+        },
+        "Way27": {
+            "duration": 1213,
+            "distance": 6247
+        },
+        "Way05": {
+            "duration": 742,
+            "distance": 3257
+        },
+        "Way26": {
+            "duration": 1315,
+            "distance": 11612
+        },
+        "Way04": {
+            "duration": 920,
+            "distance": 4335
+        },
+        "Way25": {
+            "duration": 783,
+            "distance": 3098
+        },
+        "Way03": {
+            "duration": 753,
+            "distance": 3458
+        },
+        "Way02": {
+            "duration": 1452,
+            "distance": 9426
+        },
+        "Way24": {
+            "duration": 966,
+            "distance": 3661
+        },
+        "Way01": {
+            "duration": 1165,
+            "distance": 5872
+        },
+        "Way23": {
+            "duration": 764,
+            "distance": 2821
+        },
+        "Way09": {
+            "duration": 844,
+            "distance": 3723
+        },
+        "Way22": {
+            "duration": 764,
+            "distance": 2821
+        },
+        "Way21": {
+            "duration": 822,
+            "distance": 3660
+        },
+        "Way20": {
+            "duration": 657,
+            "distance": 3529
+        }
+    },
+    "Way08": {
+        "Way19": {
+            "duration": 1378,
+            "distance": 6431
+        },
+        "Way18": {
+            "duration": 1475,
+            "distance": 17735
+        },
+        "Way17": {
+            "duration": 820,
+            "distance": 5329
+        },
+        "Way16": {
+            "duration": 1474,
+            "distance": 19398
+        },
+        "Way15": {
+            "duration": 1656,
+            "distance": 9845
+        },
+        "Way14": {
+            "duration": 1606,
+            "distance": 17887
+        },
+        "Way13": {
+            "duration": 819,
+            "distance": 5247
+        },
+        "Way12": {
+            "duration": 1465,
+            "distance": 6125
+        },
+        "Way11": {
+            "duration": 1603,
+            "distance": 7214
+        },
+        "Way10": {
+            "duration": 831,
+            "distance": 5281
+        },
+        "Way07": {
+            "duration": 1013,
+            "distance": 7089
+        },
+        "Way06": {
+            "duration": 1570,
+            "distance": 6428
+        },
+        "Way28": {
+            "duration": 1660,
+            "distance": 7993
+        },
+        "Way05": {
+            "duration": 1563,
+            "distance": 18008
+        },
+        "Way27": {
+            "duration": 1710,
+            "distance": 8313
+        },
+        "Way04": {
+            "duration": 967,
+            "distance": 4496
+        },
+        "Way26": {
+            "duration": 1696,
+            "distance": 21048
+        },
+        "Way03": {
+            "duration": 1076,
+            "distance": 4843
+        },
+        "Way25": {
+            "duration": 514,
+            "distance": 2680
+        },
+        "Way02": {
+            "duration": 1018,
+            "distance": 5812
+        },
+        "Way24": {
+            "duration": 795,
+            "distance": 3124
+        },
+        "Way23": {
+            "duration": 1178,
+            "distance": 5453
+        },
+        "Way01": {
+            "duration": 1228,
+            "distance": 7434
+        },
+        "Way09": {
+            "duration": 1326,
+            "distance": 5810
+        },
+        "Way22": {
+            "duration": 1178,
+            "distance": 5453
+        },
+        "Way21": {
+            "duration": 512,
+            "distance": 2189
+        },
+        "Way20": {
+            "duration": 1360,
+            "distance": 17502
+        }
+    },
+    "Way07": {
+        "Way19": {
+            "duration": 979,
+            "distance": 4884
+        },
+        "Way18": {
+            "duration": 706,
+            "distance": 3559
+        },
+        "Way17": {
+            "duration": 440,
+            "distance": 3630
+        },
+        "Way16": {
+            "duration": 876,
+            "distance": 5209
+        },
+        "Way15": {
+            "duration": 2246,
+            "distance": 15364
+        },
+        "Way14": {
+            "duration": 891,
+            "distance": 4759
+        },
+        "Way13": {
+            "duration": 698,
+            "distance": 4492
+        },
+        "Way12": {
+            "duration": 987,
+            "distance": 4705
+        },
+        "Way11": {
+            "duration": 901,
+            "distance": 5008
+        },
+        "Way10": {
+            "duration": 510,
+            "distance": 3961
+        },
+        "Way08": {
+            "duration": 996,
+            "distance": 6670
+        },
+        "Way06": {
+            "duration": 1093,
+            "distance": 5008
+        },
+        "Way28": {
+            "duration": 1069,
+            "distance": 8286
+        },
+        "Way05": {
+            "duration": 743,
+            "distance": 3539
+        },
+        "Way27": {
+            "duration": 1156,
+            "distance": 8907
+        },
+        "Way26": {
+            "duration": 1170,
+            "distance": 9451
+        },
+        "Way04": {
+            "duration": 1144,
+            "distance": 5702
+        },
+        "Way25": {
+            "duration": 1193,
+            "distance": 8019
+        },
+        "Way03": {
+            "duration": 981,
+            "distance": 4799
+        },
+        "Way02": {
+            "duration": 1609,
+            "distance": 11037
+        },
+        "Way24": {
+            "duration": 1265,
+            "distance": 5929
+        },
+        "Way01": {
+            "duration": 1389,
+            "distance": 7240
+        },
+        "Way23": {
+            "duration": 685,
+            "distance": 3864
+        },
+        "Way09": {
+            "duration": 848,
+            "distance": 4390
+        },
+        "Way22": {
+            "duration": 685,
+            "distance": 3864
+        },
+        "Way21": {
+            "duration": 1027,
+            "distance": 7472
+        },
+        "Way20": {
+            "duration": 590,
+            "distance": 3326
+        }
+    },
+    "Way06": {
+        "Way19": {
+            "duration": 742,
+            "distance": 2665
+        },
+        "Way18": {
+            "duration": 614,
+            "distance": 2555
+        },
+        "Way17": {
+            "duration": 996,
+            "distance": 4592
+        },
+        "Way16": {
+            "duration": 464,
+            "distance": 1725
+        },
+        "Way15": {
+            "duration": 2132,
+            "distance": 24737
+        },
+        "Way14": {
+            "duration": 497,
+            "distance": 1527
+        },
+        "Way13": {
+            "duration": 914,
+            "distance": 3802
+        },
+        "Way12": {
+            "duration": 895,
+            "distance": 3702
+        },
+        "Way11": {
+            "duration": 595,
+            "distance": 1746
+        },
+        "Way10": {
+            "duration": 926,
+            "distance": 4260
+        },
+        "Way08": {
+            "duration": 1463,
+            "distance": 16794
+        },
+        "Way07": {
+            "duration": 954,
+            "distance": 5824
+        },
+        "Way28": {
+            "duration": 763,
+            "distance": 3429
+        },
+        "Way27": {
+            "duration": 851,
+            "distance": 4051
+        },
+        "Way05": {
+            "duration": 676,
+            "distance": 2640
+        },
+        "Way04": {
+            "duration": 1052,
+            "distance": 4698
+        },
+        "Way26": {
+            "duration": 857,
+            "distance": 4590
+        },
+        "Way03": {
+            "duration": 889,
+            "distance": 3796
+        },
+        "Way25": {
+            "duration": 1165,
+            "distance": 5150
+        },
+        "Way24": {
+            "duration": 1692,
+            "distance": 6932
+        },
+        "Way02": {
+            "duration": 1685,
+            "distance": 7478
+        },
+        "Way01": {
+            "duration": 1165,
+            "distance": 5195
+        },
+        "Way23": {
+            "duration": 593,
+            "distance": 2860
+        },
+        "Way09": {
+            "duration": 756,
+            "distance": 3387
+        },
+        "Way22": {
+            "duration": 593,
+            "distance": 2860
+        },
+        "Way21": {
+            "duration": 1302,
+            "distance": 6070
+        },
+        "Way20": {
+            "duration": 498,
+            "distance": 2322
+        }
+    },
+    "Way28": {
+        "Way19": {
+            "duration": 578,
+            "distance": 2495
+        },
+        "Way18": {
+            "duration": 694,
+            "distance": 4540
+        },
+        "Way17": {
+            "duration": 833,
+            "distance": 8961
+        },
+        "Way16": {
+            "duration": 370,
+            "distance": 1544
+        },
+        "Way15": {
+            "duration": 2081,
+            "distance": 25092
+        },
+        "Way14": {
+            "duration": 424,
+            "distance": 1874
+        },
+        "Way13": {
+            "duration": 851,
+            "distance": 5262
+        },
+        "Way12": {
+            "duration": 1049,
+            "distance": 3975
+        },
+        "Way11": {
+            "duration": 522,
+            "distance": 2093
+        },
+        "Way10": {
+            "duration": 864,
+            "distance": 5721
+        },
+        "Way08": {
+            "duration": 1286,
+            "distance": 17836
+        },
+        "Way07": {
+            "duration": 842,
+            "distance": 9231
+        },
+        "Way06": {
+            "duration": 1154,
+            "distance": 4277
+        },
+        "Way05": {
+            "duration": 760,
+            "distance": 4657
+        },
+        "Way27": {
+            "duration": 452,
+            "distance": 1689
+        },
+        "Way04": {
+            "duration": 992,
+            "distance": 4528
+        },
+        "Way26": {
+            "duration": 585,
+            "distance": 2273
+        },
+        "Way03": {
+            "duration": 899,
+            "distance": 4251
+        },
+        "Way25": {
+            "duration": 1102,
+            "distance": 6611
+        },
+        "Way02": {
+            "duration": 1351,
+            "distance": 5801
+        },
+        "Way24": {
+            "duration": 1544,
+            "distance": 10328
+        },
+        "Way23": {
+            "duration": 674,
+            "distance": 4845
+        },
+        "Way01": {
+            "duration": 831,
+            "distance": 3519
+        },
+        "Way09": {
+            "duration": 910,
+            "distance": 3660
+        },
+        "Way22": {
+            "duration": 674,
+            "distance": 4845
+        },
+        "Way21": {
+            "duration": 1239,
+            "distance": 7531
+        },
+        "Way20": {
+            "duration": 579,
+            "distance": 4307
+        }
+    },
+    "Way05": {
+        "Way19": {
+            "duration": 446,
+            "distance": 1689
+        },
+        "Way18": {
+            "duration": 1039,
+            "distance": 4009
+        },
+        "Way17": {
+            "duration": 866,
+            "distance": 3887
+        },
+        "Way16": {
+            "duration": 890,
+            "distance": 3179
+        },
+        "Way15": {
+            "duration": 2184,
+            "distance": 12460
+        },
+        "Way14": {
+            "duration": 860,
+            "distance": 2948
+        },
+        "Way13": {
+            "duration": 669,
+            "distance": 2759
+        },
+        "Way12": {
+            "duration": 454,
+            "distance": 1510
+        },
+        "Way11": {
+            "duration": 665,
+            "distance": 2438
+        },
+        "Way10": {
+            "duration": 796,
+            "distance": 3555
+        },
+        "Way08": {
+            "duration": 1237,
+            "distance": 6119
+        },
+        "Way07": {
+            "duration": 1094,
+            "distance": 5922
+        },
+        "Way06": {
+            "duration": 560,
+            "distance": 1813
+        },
+        "Way28": {
+            "duration": 853,
+            "distance": 4100
+        },
+        "Way27": {
+            "duration": 904,
+            "distance": 4420
+        },
+        "Way04": {
+            "duration": 611,
+            "distance": 2507
+        },
+        "Way26": {
+            "duration": 1068,
+            "distance": 5000
+        },
+        "Way25": {
+            "duration": 802,
+            "distance": 3461
+        },
+        "Way03": {
+            "duration": 448,
+            "distance": 1604
+        },
+        "Way24": {
+            "duration": 1386,
+            "distance": 5464
+        },
+        "Way02": {
+            "duration": 1200,
+            "distance": 4983
+        },
+        "Way23": {
+            "duration": 152,
+            "distance": 669
+        },
+        "Way01": {
+            "duration": 856,
+            "distance": 4045
+        },
+        "Way09": {
+            "duration": 315,
+            "distance": 1195
+        },
+        "Way22": {
+            "duration": 152,
+            "distance": 669
+        },
+        "Way21": {
+            "duration": 915,
+            "distance": 4527
+        },
+        "Way20": {
+            "duration": 924,
+            "distance": 3776
+        }
+    },
+    "Way27": {
+        "Way19": {
+            "duration": 670,
+            "distance": 2542
+        },
+        "Way18": {
+            "duration": 994,
+            "distance": 7027
+        },
+        "Way17": {
+            "duration": 1133,
+            "distance": 11448
+        },
+        "Way16": {
+            "duration": 765,
+            "distance": 3343
+        },
+        "Way15": {
+            "duration": 2168,
+            "distance": 21456
+        },
+        "Way14": {
+            "duration": 733,
+            "distance": 4367
+        },
+        "Way13": {
+            "duration": 1152,
+            "distance": 7749
+        },
+        "Way12": {
+            "duration": 1141,
+            "distance": 4021
+        },
+        "Way11": {
+            "duration": 862,
+            "distance": 2958
+        },
+        "Way10": {
+            "duration": 1164,
+            "distance": 8208
+        },
+        "Way08": {
+            "duration": 1586,
+            "distance": 20323
+        },
+        "Way07": {
+            "duration": 1142,
+            "distance": 11718
+        },
+        "Way06": {
+            "duration": 1247,
+            "distance": 4324
+        },
+        "Way28": {
+            "duration": 484,
+            "distance": 1797
+        },
+        "Way05": {
+            "duration": 1060,
+            "distance": 7144
+        },
+        "Way04": {
+            "duration": 1001,
+            "distance": 4544
+        },
+        "Way26": {
+            "duration": 164,
+            "distance": 580
+        },
+        "Way25": {
+            "duration": 1349,
+            "distance": 6201
+        },
+        "Way03": {
+            "duration": 907,
+            "distance": 4268
+        },
+        "Way24": {
+            "duration": 1845,
+            "distance": 12815
+        },
+        "Way02": {
+            "duration": 1237,
+            "distance": 5298
+        },
+        "Way23": {
+            "duration": 974,
+            "distance": 7332
+        },
+        "Way01": {
+            "duration": 717,
+            "distance": 3015
+        },
+        "Way09": {
+            "duration": 1002,
+            "distance": 3706
+        },
+        "Way22": {
+            "duration": 974,
+            "distance": 7332
+        },
+        "Way21": {
+            "duration": 1535,
+            "distance": 7340
+        },
+        "Way20": {
+            "duration": 879,
+            "distance": 6794
+        }
+    },
+    "Way26": {
+        "Way19": {
+            "duration": 780,
+            "distance": 3063
+        },
+        "Way18": {
+            "duration": 994,
+            "distance": 6860
+        },
+        "Way17": {
+            "duration": 1133,
+            "distance": 11281
+        },
+        "Way16": {
+            "duration": 757,
+            "distance": 4434
+        },
+        "Way15": {
+            "duration": 2004,
+            "distance": 20875
+        },
+        "Way14": {
+            "duration": 733,
+            "distance": 4200
+        },
+        "Way13": {
+            "duration": 1151,
+            "distance": 7582
+        },
+        "Way12": {
+            "duration": 1251,
+            "distance": 4542
+        },
+        "Way11": {
+            "duration": 830,
+            "distance": 4419
+        },
+        "Way10": {
+            "duration": 1163,
+            "distance": 8041
+        },
+        "Way08": {
+            "duration": 1586,
+            "distance": 20156
+        },
+        "Way07": {
+            "duration": 1142,
+            "distance": 11551
+        },
+        "Way06": {
+            "duration": 1356,
+            "distance": 4845
+        },
+        "Way28": {
+            "duration": 577,
+            "distance": 2317
+        },
+        "Way05": {
+            "duration": 1060,
+            "distance": 6977
+        },
+        "Way27": {
+            "duration": 336,
+            "distance": 1330
+        },
+        "Way04": {
+            "duration": 1100,
+            "distance": 5117
+        },
+        "Way25": {
+            "duration": 1448,
+            "distance": 6773
+        },
+        "Way03": {
+            "duration": 1006,
+            "distance": 4840
+        },
+        "Way24": {
+            "duration": 1844,
+            "distance": 12648
+        },
+        "Way02": {
+            "duration": 1335,
+            "distance": 5870
+        },
+        "Way23": {
+            "duration": 973,
+            "distance": 7165
+        },
+        "Way01": {
+            "duration": 815,
+            "distance": 3587
+        },
+        "Way09": {
+            "duration": 1112,
+            "distance": 4227
+        },
+        "Way22": {
+            "duration": 973,
+            "distance": 7165
+        },
+        "Way21": {
+            "duration": 1634,
+            "distance": 7913
+        },
+        "Way20": {
+            "duration": 878,
+            "distance": 6627
+        }
+    },
+    "Way04": {
+        "Way19": {
+            "duration": 550,
+            "distance": 2274
+        },
+        "Way18": {
+            "duration": 1222,
+            "distance": 4467
+        },
+        "Way17": {
+            "duration": 953,
+            "distance": 3950
+        },
+        "Way16": {
+            "duration": 1073,
+            "distance": 3637
+        },
+        "Way15": {
+            "duration": 1863,
+            "distance": 11011
+        },
+        "Way14": {
+            "duration": 970,
+            "distance": 3567
+        },
+        "Way13": {
+            "duration": 768,
+            "distance": 3363
+        },
+        "Way12": {
+            "duration": 637,
+            "distance": 1968
+        },
+        "Way11": {
+            "duration": 775,
+            "distance": 3057
+        },
+        "Way10": {
+            "duration": 883,
+            "distance": 3619
+        },
+        "Way08": {
+            "duration": 910,
+            "distance": 4526
+        },
+        "Way07": {
+            "duration": 1193,
+            "distance": 6525
+        },
+        "Way06": {
+            "duration": 742,
+            "distance": 2271
+        },
+        "Way28": {
+            "duration": 832,
+            "distance": 3837
+        },
+        "Way05": {
+            "duration": 1284,
+            "distance": 4552
+        },
+        "Way27": {
+            "duration": 882,
+            "distance": 4156
+        },
+        "Way26": {
+            "duration": 1046,
+            "distance": 4737
+        },
+        "Way03": {
+            "duration": 193,
+            "distance": 517
+        },
+        "Way25": {
+            "duration": 409,
+            "distance": 1815
+        },
+        "Way02": {
+            "duration": 809,
+            "distance": 2967
+        },
+        "Way24": {
+            "duration": 1135,
+            "distance": 4291
+        },
+        "Way23": {
+            "duration": 438,
+            "distance": 1826
+        },
+        "Way01": {
+            "duration": 559,
+            "distance": 2566
+        },
+        "Way09": {
+            "duration": 498,
+            "distance": 1653
+        },
+        "Way22": {
+            "duration": 438,
+            "distance": 1826
+        },
+        "Way21": {
+            "duration": 595,
+            "distance": 2955
+        },
+        "Way20": {
+            "duration": 1107,
+            "distance": 4234
+        }
+    },
+    "Way25": {
+        "Way19": {
+            "duration": 855,
+            "distance": 3743
+        },
+        "Way18": {
+            "duration": 1296,
+            "distance": 5467
+        },
+        "Way17": {
+            "duration": 877,
+            "distance": 3261
+        },
+        "Way16": {
+            "duration": 1377,
+            "distance": 5106
+        },
+        "Way15": {
+            "duration": 1588,
+            "distance": 9475
+        },
+        "Way14": {
+            "duration": 1274,
+            "distance": 5036
+        },
+        "Way13": {
+            "duration": 709,
+            "distance": 2630
+        },
+        "Way12": {
+            "duration": 942,
+            "distance": 3437
+        },
+        "Way11": {
+            "duration": 1080,
+            "distance": 4526
+        },
+        "Way10": {
+            "duration": 807,
+            "distance": 2930
+        },
+        "Way08": {
+            "duration": 581,
+            "distance": 2966
+        },
+        "Way07": {
+            "duration": 1195,
+            "distance": 8433
+        },
+        "Way06": {
+            "duration": 1047,
+            "distance": 3740
+        },
+        "Way28": {
+            "duration": 1137,
+            "distance": 5305
+        },
+        "Way05": {
+            "duration": 1350,
+            "distance": 5373
+        },
+        "Way27": {
+            "duration": 1187,
+            "distance": 5625
+        },
+        "Way04": {
+            "duration": 444,
+            "distance": 1808
+        },
+        "Way26": {
+            "duration": 1351,
+            "distance": 6205
+        },
+        "Way03": {
+            "duration": 553,
+            "distance": 2155
+        },
+        "Way02": {
+            "duration": 1011,
+            "distance": 4465
+        },
+        "Way24": {
+            "duration": 806,
+            "distance": 2731
+        },
+        "Way23": {
+            "duration": 655,
+            "distance": 2765
+        },
+        "Way01": {
+            "duration": 817,
+            "distance": 3494
+        },
+        "Way09": {
+            "duration": 803,
+            "distance": 3122
+        },
+        "Way22": {
+            "duration": 655,
+            "distance": 2765
+        },
+        "Way21": {
+            "duration": 265,
+            "distance": 1395
+        },
+        "Way20": {
+            "duration": 1180,
+            "distance": 5234
+        }
+    },
+    "Way03": {
+        "Way19": {
+            "duration": 426,
+            "distance": 1841
+        },
+        "Way18": {
+            "duration": 1241,
+            "distance": 5066
+        },
+        "Way17": {
+            "duration": 841,
+            "distance": 3952
+        },
+        "Way16": {
+            "duration": 1061,
+            "distance": 4946
+        },
+        "Way15": {
+            "duration": 1974,
+            "distance": 11578
+        },
+        "Way14": {
+            "duration": 845,
+            "distance": 3134
+        },
+        "Way13": {
+            "duration": 644,
+            "distance": 2825
+        },
+        "Way12": {
+            "duration": 525,
+            "distance": 1512
+        },
+        "Way11": {
+            "duration": 651,
+            "distance": 2624
+        },
+        "Way10": {
+            "duration": 771,
+            "distance": 3620
+        },
+        "Way08": {
+            "duration": 1091,
+            "distance": 5114
+        },
+        "Way07": {
+            "duration": 1069,
+            "distance": 5987
+        },
+        "Way28": {
+            "duration": 708,
+            "distance": 3404
+        },
+        "Way06": {
+            "duration": 630,
+            "distance": 1814
+        },
+        "Way27": {
+            "duration": 758,
+            "distance": 3723
+        },
+        "Way05": {
+            "duration": 1296,
+            "distance": 4972
+        },
+        "Way26": {
+            "duration": 922,
+            "distance": 4304
+        },
+        "Way04": {
+            "duration": 353,
+            "distance": 1192
+        },
+        "Way25": {
+            "duration": 589,
+            "distance": 2404
+        },
+        "Way02": {
+            "duration": 936,
+            "distance": 3555
+        },
+        "Way24": {
+            "duration": 1164,
+            "distance": 4581
+        },
+        "Way23": {
+            "duration": 339,
+            "distance": 1284
+        },
+        "Way01": {
+            "duration": 588,
+            "distance": 2617
+        },
+        "Way09": {
+            "duration": 386,
+            "distance": 1197
+        },
+        "Way22": {
+            "duration": 339,
+            "distance": 1284
+        },
+        "Way21": {
+            "duration": 692,
+            "distance": 3644
+        },
+        "Way20": {
+            "duration": 1125,
+            "distance": 4833
+        }
+    },
+    "Way02": {
+        "Way19": {
+            "duration": 1059,
+            "distance": 4410
+        },
+        "Way18": {
+            "duration": 1807,
+            "distance": 9366
+        },
+        "Way17": {
+            "duration": 1361,
+            "distance": 8942
+        },
+        "Way16": {
+            "duration": 1488,
+            "distance": 6370
+        },
+        "Way15": {
+            "duration": 1495,
+            "distance": 10464
+        },
+        "Way14": {
+            "duration": 1537,
+            "distance": 6701
+        },
+        "Way13": {
+            "duration": 1360,
+            "distance": 8860
+        },
+        "Way12": {
+            "duration": 1302,
+            "distance": 5354
+        },
+        "Way11": {
+            "duration": 1284,
+            "distance": 5193
+        },
+        "Way10": {
+            "duration": 1373,
+            "distance": 8893
+        },
+        "Way08": {
+            "duration": 998,
+            "distance": 5772
+        },
+        "Way07": {
+            "duration": 1554,
+            "distance": 10701
+        },
+        "Way06": {
+            "duration": 1408,
+            "distance": 5656
+        },
+        "Way28": {
+            "duration": 1134,
+            "distance": 4828
+        },
+        "Way05": {
+            "duration": 1873,
+            "distance": 9483
+        },
+        "Way27": {
+            "duration": 1153,
+            "distance": 4844
+        },
+        "Way04": {
+            "duration": 829,
+            "distance": 3708
+        },
+        "Way26": {
+            "duration": 1317,
+            "distance": 5425
+        },
+        "Way25": {
+            "duration": 954,
+            "distance": 3783
+        },
+        "Way03": {
+            "duration": 914,
+            "distance": 4250
+        },
+        "Way24": {
+            "duration": 1416,
+            "distance": 7131
+        },
+        "Way23": {
+            "duration": 1131,
+            "distance": 4644
+        },
+        "Way01": {
+            "duration": 641,
+            "distance": 2849
+        },
+        "Way09": {
+            "duration": 1164,
+            "distance": 5039
+        },
+        "Way22": {
+            "duration": 1131,
+            "distance": 4644
+        },
+        "Way21": {
+            "duration": 923,
+            "distance": 4317
+        },
+        "Way20": {
+            "duration": 1692,
+            "distance": 9134
+        }
+    },
+    "Way24": {
+        "Way19": {
+            "duration": 1158,
+            "distance": 4709
+        },
+        "Way18": {
+            "duration": 1282,
+            "distance": 4995
+        },
+        "Way17": {
+            "duration": 643,
+            "distance": 2111
+        },
+        "Way16": {
+            "duration": 1499,
+            "distance": 5919
+        },
+        "Way15": {
+            "duration": 2030,
+            "distance": 10988
+        },
+        "Way14": {
+            "duration": 1514,
+            "distance": 5469
+        },
+        "Way13": {
+            "duration": 475,
+            "distance": 1480
+        },
+        "Way12": {
+            "duration": 1300,
+            "distance": 4464
+        },
+        "Way11": {
+            "duration": 1383,
+            "distance": 5492
+        },
+        "Way10": {
+            "duration": 573,
+            "distance": 1779
+        },
+        "Way08": {
+            "duration": 841,
+            "distance": 3321
+        },
+        "Way07": {
+            "duration": 985,
+            "distance": 5385
+        },
+        "Way06": {
+            "duration": 1405,
+            "distance": 4767
+        },
+        "Way28": {
+            "duration": 1440,
+            "distance": 6271
+        },
+        "Way05": {
+            "duration": 1293,
+            "distance": 4965
+        },
+        "Way27": {
+            "duration": 1490,
+            "distance": 6591
+        },
+        "Way04": {
+            "duration": 986,
+            "distance": 3638
+        },
+        "Way26": {
+            "duration": 1654,
+            "distance": 7171
+        },
+        "Way03": {
+            "duration": 857,
+            "distance": 2982
+        },
+        "Way25": {
+            "duration": 601,
+            "distance": 1978
+        },
+        "Way02": {
+            "duration": 1394,
+            "distance": 6067
+        },
+        "Way23": {
+            "duration": 968,
+            "distance": 3592
+        },
+        "Way01": {
+            "duration": 1221,
+            "distance": 5062
+        },
+        "Way09": {
+            "duration": 1161,
+            "distance": 4149
+        },
+        "Way22": {
+            "duration": 968,
+            "distance": 3592
+        },
+        "Way21": {
+            "duration": 645,
+            "distance": 2541
+        },
+        "Way20": {
+            "duration": 1167,
+            "distance": 4762
+        }
+    },
+    "Way01": {
+        "Way19": {
+            "duration": 543,
+            "distance": 1970
+        },
+        "Way18": {
+            "duration": 1291,
+            "distance": 6601
+        },
+        "Way17": {
+            "duration": 1128,
+            "distance": 5235
+        },
+        "Way16": {
+            "duration": 967,
+            "distance": 3605
+        },
+        "Way15": {
+            "duration": 1822,
+            "distance": 12998
+        },
+        "Way14": {
+            "duration": 1021,
+            "distance": 3936
+        },
+        "Way13": {
+            "duration": 960,
+            "distance": 4604
+        },
+        "Way12": {
+            "duration": 786,
+            "distance": 2913
+        },
+        "Way11": {
+            "duration": 768,
+            "distance": 2753
+        },
+        "Way10": {
+            "duration": 1059,
+            "distance": 4904
+        },
+        "Way08": {
+            "duration": 1219,
+            "distance": 5705
+        },
+        "Way07": {
+            "duration": 1439,
+            "distance": 11293
+        },
+        "Way06": {
+            "duration": 892,
+            "distance": 3216
+        },
+        "Way28": {
+            "duration": 597,
+            "distance": 2061
+        },
+        "Way05": {
+            "duration": 1357,
+            "distance": 6718
+        },
+        "Way27": {
+            "duration": 641,
+            "distance": 2563
+        },
+        "Way26": {
+            "duration": 805,
+            "distance": 3143
+        },
+        "Way04": {
+            "duration": 383,
+            "distance": 1533
+        },
+        "Way25": {
+            "duration": 717,
+            "distance": 2995
+        },
+        "Way03": {
+            "duration": 464,
+            "distance": 1784
+        },
+        "Way24": {
+            "duration": 1402,
+            "distance": 5531
+        },
+        "Way02": {
+            "duration": 693,
+            "distance": 2677
+        },
+        "Way23": {
+            "duration": 700,
+            "distance": 3092
+        },
+        "Way09": {
+            "duration": 647,
+            "distance": 2598
+        },
+        "Way22": {
+            "duration": 700,
+            "distance": 3092
+        },
+        "Way21": {
+            "duration": 903,
+            "distance": 4134
+        },
+        "Way20": {
+            "duration": 1176,
+            "distance": 6368
+        }
+    },
+    "Way23": {
+        "Way19": {
+            "duration": 416,
+            "distance": 1866
+        },
+        "Way18": {
+            "duration": 1069,
+            "distance": 4583
+        },
+        "Way17": {
+            "duration": 736,
+            "distance": 3466
+        },
+        "Way16": {
+            "duration": 1052,
+            "distance": 4971
+        },
+        "Way15": {
+            "duration": 2029,
+            "distance": 11788
+        },
+        "Way14": {
+            "duration": 836,
+            "distance": 3159
+        },
+        "Way13": {
+            "duration": 539,
+            "distance": 2339
+        },
+        "Way12": {
+            "duration": 522,
+            "distance": 1513
+        },
+        "Way11": {
+            "duration": 642,
+            "distance": 2649
+        },
+        "Way10": {
+            "duration": 666,
+            "distance": 3135
+        },
+        "Way08": {
+            "duration": 1082,
+            "distance": 5446
+        },
+        "Way07": {
+            "duration": 964,
+            "distance": 5501
+        },
+        "Way06": {
+            "duration": 628,
+            "distance": 1815
+        },
+        "Way28": {
+            "duration": 698,
+            "distance": 3428
+        },
+        "Way05": {
+            "duration": 1124,
+            "distance": 4489
+        },
+        "Way27": {
+            "duration": 748,
+            "distance": 3748
+        },
+        "Way26": {
+            "duration": 912,
+            "distance": 4328
+        },
+        "Way04": {
+            "duration": 456,
+            "distance": 1835
+        },
+        "Way25": {
+            "duration": 647,
+            "distance": 2789
+        },
+        "Way03": {
+            "duration": 293,
+            "distance": 932
+        },
+        "Way24": {
+            "duration": 1231,
+            "distance": 4791
+        },
+        "Way02": {
+            "duration": 1044,
+            "distance": 4311
+        },
+        "Way01": {
+            "duration": 701,
+            "distance": 3373
+        },
+        "Way09": {
+            "duration": 384,
+            "distance": 1198
+        },
+        "Way22": {
+            "duration": 0,
+            "distance": 0
+        },
+        "Way21": {
+            "duration": 760,
+            "distance": 3855
+        },
+        "Way20": {
+            "duration": 954,
+            "distance": 4350
+        }
+    },
+    "Way09": {
+        "Way19": {
+            "duration": 321,
+            "distance": 1096
+        },
+        "Way18": {
+            "duration": 741,
+            "distance": 2887
+        },
+        "Way17": {
+            "duration": 963,
+            "distance": 4295
+        },
+        "Way16": {
+            "duration": 591,
+            "distance": 2057
+        },
+        "Way15": {
+            "duration": 2306,
+            "distance": 12861
+        },
+        "Way14": {
+            "duration": 624,
+            "distance": 1860
+        },
+        "Way13": {
+            "duration": 766,
+            "distance": 3167
+        },
+        "Way12": {
+            "duration": 156,
+            "distance": 388
+        },
+        "Way11": {
+            "duration": 369,
+            "distance": 844
+        },
+        "Way10": {
+            "duration": 893,
+            "distance": 3963
+        },
+        "Way08": {
+            "duration": 1357,
+            "distance": 6219
+        },
+        "Way07": {
+            "duration": 1081,
+            "distance": 6156
+        },
+        "Way06": {
+            "duration": 261,
+            "distance": 691
+        },
+        "Way28": {
+            "duration": 598,
+            "distance": 2353
+        },
+        "Way05": {
+            "duration": 803,
+            "distance": 2972
+        },
+        "Way27": {
+            "duration": 806,
+            "distance": 3765
+        },
+        "Way26": {
+            "duration": 970,
+            "distance": 4345
+        },
+        "Way04": {
+            "duration": 507,
+            "distance": 1852
+        },
+        "Way25": {
+            "duration": 855,
+            "distance": 3508
+        },
+        "Way03": {
+            "duration": 425,
+            "distance": 1575
+        },
+        "Way02": {
+            "duration": 1097,
+            "distance": 4232
+        },
+        "Way24": {
+            "duration": 1455,
+            "distance": 5861
+        },
+        "Way01": {
+            "duration": 752,
+            "distance": 3276
+        },
+        "Way23": {
+            "duration": 448,
+            "distance": 1623
+        },
+        "Way22": {
+            "duration": 448,
+            "distance": 1623
+        },
+        "Way21": {
+            "duration": 1041,
+            "distance": 4648
+        },
+        "Way20": {
+            "duration": 625,
+            "distance": 2654
+        }
+    },
+    "Way22": {
+        "Way19": {
+            "duration": 416,
+            "distance": 1866
+        },
+        "Way18": {
+            "duration": 1069,
+            "distance": 4583
+        },
+        "Way17": {
+            "duration": 736,
+            "distance": 3466
+        },
+        "Way16": {
+            "duration": 1052,
+            "distance": 4971
+        },
+        "Way15": {
+            "duration": 2029,
+            "distance": 11788
+        },
+        "Way14": {
+            "duration": 836,
+            "distance": 3159
+        },
+        "Way13": {
+            "duration": 539,
+            "distance": 2339
+        },
+        "Way12": {
+            "duration": 522,
+            "distance": 1513
+        },
+        "Way11": {
+            "duration": 642,
+            "distance": 2649
+        },
+        "Way10": {
+            "duration": 666,
+            "distance": 3135
+        },
+        "Way08": {
+            "duration": 1082,
+            "distance": 5446
+        },
+        "Way07": {
+            "duration": 964,
+            "distance": 5501
+        },
+        "Way06": {
+            "duration": 628,
+            "distance": 1815
+        },
+        "Way28": {
+            "duration": 698,
+            "distance": 3428
+        },
+        "Way27": {
+            "duration": 748,
+            "distance": 3748
+        },
+        "Way05": {
+            "duration": 1124,
+            "distance": 4489
+        },
+        "Way26": {
+            "duration": 912,
+            "distance": 4328
+        },
+        "Way04": {
+            "duration": 456,
+            "distance": 1835
+        },
+        "Way03": {
+            "duration": 293,
+            "distance": 932
+        },
+        "Way25": {
+            "duration": 647,
+            "distance": 2789
+        },
+        "Way02": {
+            "duration": 1044,
+            "distance": 4311
+        },
+        "Way24": {
+            "duration": 1231,
+            "distance": 4791
+        },
+        "Way01": {
+            "duration": 701,
+            "distance": 3373
+        },
+        "Way23": {
+            "duration": 0,
+            "distance": 0
+        },
+        "Way09": {
+            "duration": 384,
+            "distance": 1198
+        },
+        "Way21": {
+            "duration": 760,
+            "distance": 3855
+        },
+        "Way20": {
+            "duration": 954,
+            "distance": 4350
+        }
+    },
+    "Way21": {
+        "Way19": {
+            "duration": 1226,
+            "distance": 5687
+        },
+        "Way18": {
+            "duration": 1554,
+            "distance": 6740
+        },
+        "Way17": {
+            "duration": 825,
+            "distance": 5939
+        },
+        "Way16": {
+            "duration": 1534,
+            "distance": 20078
+        },
+        "Way15": {
+            "duration": 1461,
+            "distance": 9034
+        },
+        "Way14": {
+            "duration": 1645,
+            "distance": 6980
+        },
+        "Way13": {
+            "duration": 747,
+            "distance": 3225
+        },
+        "Way12": {
+            "duration": 1313,
+            "distance": 5382
+        },
+        "Way11": {
+            "duration": 1451,
+            "distance": 6470
+        },
+        "Way10": {
+            "duration": 845,
+            "distance": 3525
+        },
+        "Way08": {
+            "duration": 401,
+            "distance": 1580
+        },
+        "Way07": {
+            "duration": 1018,
+            "distance": 7699
+        },
+        "Way28": {
+            "duration": 1508,
+            "distance": 7250
+        },
+        "Way06": {
+            "duration": 1418,
+            "distance": 5684
+        },
+        "Way05": {
+            "duration": 1565,
+            "distance": 6711
+        },
+        "Way27": {
+            "duration": 1558,
+            "distance": 7570
+        },
+        "Way26": {
+            "duration": 1722,
+            "distance": 8150
+        },
+        "Way04": {
+            "duration": 815,
+            "distance": 3753
+        },
+        "Way03": {
+            "duration": 924,
+            "distance": 4099
+        },
+        "Way25": {
+            "duration": 362,
+            "distance": 1937
+        },
+        "Way02": {
+            "duration": 939,
+            "distance": 4733
+        },
+        "Way24": {
+            "duration": 824,
+            "distance": 3209
+        },
+        "Way23": {
+            "duration": 1026,
+            "distance": 4709
+        },
+        "Way01": {
+            "duration": 1188,
+            "distance": 5438
+        },
+        "Way09": {
+            "duration": 1174,
+            "distance": 5067
+        },
+        "Way22": {
+            "duration": 1026,
+            "distance": 4709
+        },
+        "Way20": {
+            "duration": 1439,
+            "distance": 6507
+        }
+    },
+    "Way20": {
+        "Way19": {
+            "duration": 388,
+            "distance": 1558
+        },
+        "Way18": {
+            "duration": 982,
+            "distance": 3878
+        },
+        "Way17": {
+            "duration": 809,
+            "distance": 3756
+        },
+        "Way16": {
+            "duration": 832,
+            "distance": 3049
+        },
+        "Way15": {
+            "duration": 2127,
+            "distance": 12329
+        },
+        "Way14": {
+            "duration": 803,
+            "distance": 2818
+        },
+        "Way13": {
+            "duration": 612,
+            "distance": 2629
+        },
+        "Way12": {
+            "duration": 397,
+            "distance": 1380
+        },
+        "Way11": {
+            "duration": 608,
+            "distance": 2308
+        },
+        "Way10": {
+            "duration": 739,
+            "distance": 3424
+        },
+        "Way08": {
+            "duration": 1180,
+            "distance": 5988
+        },
+        "Way07": {
+            "duration": 1037,
+            "distance": 5791
+        },
+        "Way28": {
+            "duration": 796,
+            "distance": 3969
+        },
+        "Way06": {
+            "duration": 502,
+            "distance": 1682
+        },
+        "Way05": {
+            "duration": 1044,
+            "distance": 3963
+        },
+        "Way27": {
+            "duration": 846,
+            "distance": 4289
+        },
+        "Way26": {
+            "duration": 1010,
+            "distance": 4869
+        },
+        "Way04": {
+            "duration": 554,
+            "distance": 2376
+        },
+        "Way25": {
+            "duration": 745,
+            "distance": 3331
+        },
+        "Way03": {
+            "duration": 391,
+            "distance": 1474
+        },
+        "Way24": {
+            "duration": 1329,
+            "distance": 5333
+        },
+        "Way02": {
+            "duration": 1142,
+            "distance": 4852
+        },
+        "Way23": {
+            "duration": 95,
+            "distance": 538
+        },
+        "Way01": {
+            "duration": 798,
+            "distance": 3914
+        },
+        "Way09": {
+            "duration": 258,
+            "distance": 1065
+        },
+        "Way22": {
+            "duration": 95,
+            "distance": 538
+        },
+        "Way21": {
+            "duration": 857,
+            "distance": 4396
+        }
+    }
+}

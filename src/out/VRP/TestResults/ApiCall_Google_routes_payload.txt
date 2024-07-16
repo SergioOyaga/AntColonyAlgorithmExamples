@@ -1,0 +1,261 @@
+{
+    "routingPreference": "TRAFFIC_UNAWARE",
+    "routeModifiers": {
+        "avoidFerries": false,
+        "avoidHighways": false,
+        "vehicleInfo": {"emissionType": "GASOLINE"},
+        "avoidTolls": false
+    },
+    "polylineQuality": "OVERVIEW",
+    "origin": {
+        "sideOfRoad": true,
+        "vehicleStopover": false,
+        "location": {"latLng": {
+            "latitude": 41.3911,
+            "longitude": 2.1807
+        }},
+        "via": false
+    },
+    "computeAlternativeRoutes": false,
+    "destination": {
+        "sideOfRoad": true,
+        "vehicleStopover": false,
+        "location": {"latLng": {
+            "latitude": 41.3895755,
+            "longitude": 2.1307377
+        }},
+        "via": false
+    },
+    "polylineEncoding": "GEO_JSON_LINESTRING",
+    "optimizeWaypointOrder": false,
+    "units": "METRIC",
+    "intermediates": [
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3801,
+                "longitude": 2.1686
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3688,
+                "longitude": 2.1486
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3787,
+                "longitude": 2.1927
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.425,
+                "longitude": 2.1183
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3839,
+                "longitude": 2.182
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3757,
+                "longitude": 2.1494
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.384,
+                "longitude": 2.1769
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3852,
+                "longitude": 2.1805
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3709,
+                "longitude": 2.1513
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3809,
+                "longitude": 2.1228
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3639,
+                "longitude": 2.165
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3833,
+                "longitude": 2.1762
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.390039,
+                "longitude": 2.190943
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3818,
+                "longitude": 2.17
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.399988,
+                "longitude": 2.196159
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3953,
+                "longitude": 2.1619
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.403589,
+                "longitude": 2.200969
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3917,
+                "longitude": 2.165
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.392622,
+                "longitude": 2.144536
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.4145,
+                "longitude": 2.1527
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.379616,
+                "longitude": 2.140865
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.4036,
+                "longitude": 2.1744
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.387015,
+                "longitude": 2.170063
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.3873,
+                "longitude": 2.1751
+            }},
+            "via": false
+        },
+        {
+            "sideOfRoad": true,
+            "vehicleStopover": false,
+            "location": {"latLng": {
+                "latitude": 41.387015,
+                "longitude": 2.170063
+            }},
+            "via": false
+        }
+    ],
+    "languageCode": "en-US",
+    "travelMode": "DRIVE"
+}
