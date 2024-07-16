@@ -38,7 +38,7 @@ Class that implements MouseListener, MouseWheelListener, and MouseMotionListener
     <li> Panning/Zooming of the map.</li>
 </ul>
 
-### [Painters](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Painters/WorldPAinter.java)
+### [Painters](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Painters/WorldPainter.java)
 Class that extends AbstractPainter<JXMapViewer>. In charge of painting the world in the map using specific renderers.
 
 ### [Panels](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Panels)
@@ -63,7 +63,7 @@ Four classes that render specific components.
 1. [CustomWorldRenderer](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Renderers/CustomWorldRenderer.java): Class that renders a GUIWorld object.
 2. [CustomRouteRenderer](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Renderers/CustomRouteRenderer.java): Class that renders a GUIRoute object.
 3. [CustomWaypointRenderer](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Renderers/CustomWaypointRenderer.java): Class that renders a GUIWaypoint object.
-4. [TruckColumnRenderer](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Popups/TruckColumnRenderer.java): DefaultTableCellRenderer that renders the cells of a JTable using the color associated to a truck route.
+4. [TruckColumnRenderer](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Renderers/TruckColumnRenderer.java): DefaultTableCellRenderer that renders the cells of a JTable using the color associated to a truck route.
 
 ### [Waypoints](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/Waypoints)
 Six classes that define all the different Waypoints in the GUIWorld.
@@ -80,7 +80,7 @@ Class that represents a route to be drawn in the map.
 ### [GUIWorld](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/GUIWorld.java)
 Class that extends AbstractBean. It represents all items that should be drawn in a map. 
 
-### [UI](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/GUI/CapacitatedVRP/UI.java)
+### [UI](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/UI.java)
 Class that extends JFrame and implements Runnable, PropertyChangeListener, ActionListener and TableModelListener. It is the graphical representation of all the panels and also the contact point with the "outside" in our case the controller.
 
 ### [RunTest](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/VRP/CapacitatedVRP/GUI/RunTest.java)
