@@ -107,7 +107,7 @@ The example simply consists of:
     <th> <b>UI Design </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/GUI_test_exaplain.mp4"  title="UI test." alt="UI test." /></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/TestResults/GUI_test_explain.mp4"  title="UI test." alt="UI test." /></td>
   </tr>
 </table>
 We see that the front allows the user to perform basic actions and that the events are triggered accordingly. We also see that the Stats in the table are automatically updated (it is a meaningless update in this case)
