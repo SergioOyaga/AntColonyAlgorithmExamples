@@ -6,7 +6,7 @@ Solving the Capacitated Vehicle Routing Problem (CVRP) with real time routing.
     <th> <b>Example </b></th>
   </tr>
   <tr>
-    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/CapacitatedVRP_Googlee.gif"  title="User demo" alt="User demo"/></td>
+    <td> <img src="https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/out/VRP/CapacitatedVRP_Google.gif"  title="User demo" alt="User demo"/></td>
   </tr>
 </table>
 
