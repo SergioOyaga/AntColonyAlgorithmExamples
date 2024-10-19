@@ -46,7 +46,7 @@ public class RunCapacitatedVRP {
      * @throws IOException exception.
      */
     public static void readInputs(String inputFilePath, Controller controller, HashMap<String, BufferedImage> images, String apiKey) throws IOException {
-        InputStream stream = org.soyaga.examples.VRP.CapacitatedVRP.ACO.RunTest.class.getClassLoader().getResourceAsStream(inputFilePath); //InputStream
+        InputStream stream = RunCapacitatedVRP.class.getClassLoader().getResourceAsStream(inputFilePath); //InputStream
         HashMap<String, GeoPosition> positions = new HashMap<>();
         HashMap<String, Double> visitedByTruck = new HashMap<>();
         HashMap<String, ArrayList<String>> trackByTruck = new HashMap<>();
