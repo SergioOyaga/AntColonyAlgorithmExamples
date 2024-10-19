@@ -1,5 +1,5 @@
 # DenseMatrices
-Solving the Travel Salesman Problem (TSP) using dense Arrays as base structure to store information.
+Solving the Traveling Salesman Problem (TSP) using dense arrays as the base structure to store information.
 
 <table>
   <tr>
@@ -33,75 +33,65 @@ Solving the Travel Salesman Problem (TSP) using dense Arrays as base structure t
 </table>
 
 ## In this folder:
-This folder contains 4 different classes that define the structures required for solving the problem.
-These classes implement their respective interfaces from OptimizationLib.aco.
-1. [DenseTspAntColonyAlgorithm](#densetspantcolonyalgorithm): Extends StatsAntColonyAlgorithm.
-2. [ImageStat](#imagestat): Implements Stat.
-3. [AllNodesCircleFeasibilityFunction](#allnodescirclefeasibilityfunction): Implements FeasibilityFunction. 
+This folder contains four different classes that define the structures required to solve the problem. These classes implement their respective interfaces from OptimizationLib.aco:
+
+1. [DenseTspAntColonyAlgorithm](#densetspantcolonyalgorithm): Extends `StatsAntColonyAlgorithm`.
+2. [ImageStat](#imagestat): Implements `Stat`.
+3. [AllNodesCircleFeasibilityFunction](#allnodescirclefeasibilityfunction): Implements `FeasibilityFunction`.
 4. [RunDenseTspOptimization](#rundensetspoptimization): The main class for instantiation and optimization.
 
 ### [DenseTspAntColonyAlgorithm](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/DenseMatrices/DenseTspAntColonyAlgorithm.java):
-This class extends StatsAntColonyAlgorithm, which by extension makes it an Optimizer instance. In other words, this class
-can be optimized and its results can be gathered.
+This class extends `StatsAntColonyAlgorithm`, which makes it an instance of an optimizer. In other words, this class can be optimized, and its results can be gathered.
 
-````code
+````java
 public void optimize(){...}
 public Object getResult(Object ... resultArgs){...}
 ````
 
-The <i>optimize</i> method is inherited from the abstract class StatsAntColonyAlgorithm, which defines a basic optimization
-procedure. The <i>getResults</i> function computes and stores a GIF image.
+The `optimize` method is inherited from the abstract class `StatsAntColonyAlgorithm`, which defines a basic optimization procedure. The `getResults` function computes and stores a GIF image of the best solution.
 
 ### [ImageStat](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/DenseMatrices/ImageStat.java)
-This class implements Stat. This means that this class can be measured following a StatRetrievalPolicy. For this Stat,
-during its evaluation, an image is computed and stored using the best solution.
+This class implements `Stat`, allowing it to be measured following a `StatRetrievalPolicy`. During its evaluation, an image is computed and stored using the best solution found.
 
 ### [AllNodesCircleFeasibilityFunction](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/DenseMatrices/AllNodesCircleFeasibilityFunction.java)
-This class implements the FeasibilityFunction interface. As a result, it can be evaluated alongside the objective 
-function, penalizing solutions that do not meet specific criteria.
+This class implements the `FeasibilityFunction` interface, enabling it to be evaluated alongside the objective function. It penalizes solutions that do not meet specific criteria, such as visiting all nodes and returning to the starting node.
 
-### [RunDenseTspOptimization](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/DenseMatrices/RunDenseTspOptimization.java):
-This is the main class. Is where the run starts. As simple as instantiate the RunSparseTspOptimization object
-(previously defined) filled with its components, optimize it, and retrieve the results.
+### [RunDenseTspOptimization](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/TSP/DenseMatrices/RunDenseTspOptimization.java)
+This is the main class where the optimization process begins. It involves instantiating the `RunDenseTspOptimization` object (previously defined), filling it with its components, optimizing it, and retrieving the results.
 
-The specific components for the DenseTspAntColonyAlgorithm include:
-- GenericWorld: A World that contains a Graph and a PheromoneContainer.
-  - DenseMatrixGraph: A Graph that stores the info in ArrayLists.
-  - DenseMatrixPheromoneContainer: A PheromoneContainer that stores the info in ArrayLists.
-- Colony.
-- MaxIterationCriteriaPolicy: A StoppingCriteria based on a maximum number of iterations.
-- ACOInitializer: An Initializer that creates N ants in a colony.
-  - SimpleAnt: An Ant.
-    - Solution.
-      - PathDistanceObjectiveFunction: An ObjectiveFunction that evaluates the ant solution path distance.
-      - AllNodesCircleFeasibilityFunction: A FeasibilityFunction that penalizes solutions that doesn't start and end in
-      the same node and doesn't visit all nodes in the graph.
-      - AllNodesCircleBuilderEvaluator: A BuilderEvaluator that tells the ant to keep building the solution if its
-        solution doesn't start and end the same node and visits certain nodes.
-    - RandomProportionalEdgeSelector: An EdgeSelector that allows the ant to choose between the available edges.
-- SimpleConstructorPolicy: A ConstructorPolicy, ant by ant build the solution.
-- SimpleUpdatePheromonePolicy: A PheromonePolicy, first evaporate, then add.
-  - SolFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the solution fitness.
-  - PercentageEvaporatePheromonePolicy: An EvaporatePheromonePolicy that evaporates a certain percentage of the pheromone on each edge.
-- NIterationsStatsRetrievalPolicy: A StatsRetrievalPolicy that retrieves Stats every N iterations.
-  - ImageStat: A Stat that creates and stores an image of the best solution found up to now.
-  - CurrentMinFitnessStat: A Stat that retrieves the current colony's best fitness.
-  - MeanSdFitnessStat: A Stat that retrieves the colony fitness mean and STD.
+#### Specific components for the `DenseTspAntColonyAlgorithm` include:
+- **GenericWorld**: A world that contains a graph and a pheromone container.
+  - **DenseMatrixGraph**: A graph that stores information in `ArrayLists`.
+  - **DenseMatrixPheromoneContainer**: A pheromone container that also uses `ArrayLists` to store information.
+- **Colony**: Represents a group of ants.
+- **MaxIterationCriteriaPolicy**: A stopping criteria based on a maximum number of iterations.
+- **ACOInitializer**: An initializer that creates N ants in the colony.
+  - **SimpleAnt**: A basic ant representation.
+    - **Solution**:
+      - **PathDistanceObjectiveFunction**: An objective function that evaluates the path distance of the ant's solution.
+      - **AllNodesCircleFeasibilityFunction**: A feasibility function that penalizes solutions that do not start and end at the same node or fail to visit all nodes.
+      - **AllNodesCircleBuilderEvaluator**: A builder evaluator that instructs the ant to continue building the solution if it does not start and end at the same node while visiting all required nodes.
+    - **RandomProportionalEdgeSelector**: An edge selector that allows the ant to choose from available edges proportionally.
+- **SimpleConstructorPolicy**: A constructor policy that builds the solution ant by ant.
+- **SimpleUpdatePheromonePolicy**: A pheromone policy that first evaporates pheromones and then adds new pheromones.
+  - **SolFitnessProportionalAddPheromonePolicy**: An add pheromone policy that adds pheromones to edges proportionally to the solution's fitness.
+  - **PercentageEvaporatePheromonePolicy**: An evaporate pheromone policy that reduces the pheromone on each edge by a specified percentage.
+- **NIterationsStatsRetrievalPolicy**: A stats retrieval policy that gathers statistics every N iterations.
+  - **ImageStat**: A stat that creates and stores an image of the best solution found so far.
+  - **CurrentMinFitnessStat**: A stat that retrieves the current best fitness of the colony.
+  - **MeanSdFitnessStat**: A stat that retrieves the mean and standard deviation of the colony's fitness.
 
+### Building the World
+A significant part of developing algorithms for this problem involves constructing the world. Specific functions focus on building this world, which is essential for graphically representing the problem and creating a structure for the ants to traverse the graph's edges.
 
-On the other hand, the majority of the effort in this type of algorithms must be dedicated to constructing the World.
+The next function will focus on building the world.
 
-In this scenario, certain functions are specifically focused on building the World. This is necessary because we must represent
-the problem in a graphical way, creating a structure for the ants to traverse the edges of the graph.
-
-The next function builds the world.
-
-````code
+````java
 private static AbstractMap.SimpleEntry<AbstractMap.SimpleEntry<HashMap<Integer, tspNode>,HashMap<Integer, tspNode>>, GenericWorld> createWorld(String path, Double initialPheromone)
 ````
-The World is built using two matrices that illustrate distances and pheromones between nodes.
-Each column and row corresponds to a node in the problem. Transitions are understood from column to row. For instance, the pheromone 1&rarr;0
-pertains to the pheromone deposited on the edge connecting from node 1 to node 0.
+The **World** is constructed using two matrices that illustrate the distances and pheromones between nodes. Each column and row corresponds to a node in the problem. Transitions are understood as moving from column to row.
+
+For instance, the pheromone from node 1 to node 0 (denoted as \( \text{pheromone}[1][0] \)) pertains to the pheromone deposited on the edge connecting from node 1 to node 0.
 
 
 |       | col 0         | col 1         | ...             | col N         |
@@ -121,25 +111,26 @@ pertains to the pheromone deposited on the edge connecting from node 1 to node 0
 | row N | pheromone 0&rarr;N | pheromone 1&rarr;N | pheromone ...&rarr;N | pheromone N&rarr;N |
 
 
-#### tspNode:
-Auxiliary class used to store the Graphical information of the spatial nodes. We store the ID, position and other IDs with
-which this node is connected:
-- ID (Integer): Contains node number.
-- x (Integer): Contains the x position of the node.
-- y (Integer): Contains the y position of the node.
-- relatedNodes (ArrayList<Integer>): contains the IDs of the connected nodes.
+#### tspNode
 
+The `tspNode` is an auxiliary class used to store the graphical information of the spatial nodes. The following information is stored:
 
+- **ID (Integer)**: Contains the node number.
+- **x (Integer)**: Contains the x position of the node.
+- **y (Integer)**: Contains the y position of the node.
+- **relatedNodes (ArrayList<Integer>)**: Contains the IDs of the connected nodes.
 
-## Result example:
-For:
-- antNumber = 6
-- maxEdges = 10
-- alpha = 1., beta = 2.
-- maxIterations = 50
-- persistence = .9
-- initialPheromone = 0.
-- antPheromoneQuantity=10.
+## Result Example
+
+For the following parameters:
+- **antNumber** = 6
+- **maxEdges** = 10
+- **alpha** = 1.0
+- **beta** = 2.0
+- **maxIterations** = 50
+- **persistence** = 0.9
+- **initialPheromone** = 0.0
+- **antPheromoneQuantity** = 10
 ```
 --------------------------------------------------------------------------
 | Iteration | ImageSaved | CurrentMin | MeanFitness | StandardDevFitness |
@@ -154,7 +145,8 @@ For:
 | 8         | true       | 60.0000    | 264.8804    | 137.5073           |
 ```
 
-## Comment:
-This is a common scenario for a TSP with multiple stops. Such problems are typically addressed using the 
+## Comment
+
+This is a common scenario for a TSP with multiple stops. Such problems are typically addressed using the
 well-established Dijkstra's Algorithm. :scream_cat:
 

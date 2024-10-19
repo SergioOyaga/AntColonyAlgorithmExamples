@@ -1,5 +1,7 @@
 # GenericGraph
+
 Solving the Quadratic Assignment Problem (QAP) using a GenericGraph as base structure to store information.
+
 
 <table>
   <tr>
@@ -19,82 +21,69 @@ Solving the Quadratic Assignment Problem (QAP) using a GenericGraph as base stru
   </tr>
 </table>
 
-In the images above, we can see two different approaches for solving the QAP problem. These approaches differ in 
-the pheromone addition policy used. One uses the MaxGlobalBestProportionalAddPolicy, and the other uses the 
-MaxElitistFitnessProportionalAddPolicy. Each approach has its own set of advantages and disadvantages. However, they 
-serve as an example of how a simple change can significantly alter the behavior of the entire algorithm.
+In the images above, we can observe two different approaches for solving the Quadratic Assignment Problem (QAP). These approaches differ in the pheromone addition policy used: one employs the **MaxGlobalBestProportionalAddPolicy**, while the other uses the **MaxElitistFitnessProportionalAddPolicy**. Each approach has its own set of advantages and disadvantages. However, they serve as an example of how a simple change can significantly alter the behavior of the entire algorithm.
 
 ## In this folder:
-This folder contains 2 different classes that define the structures required for solving the problem.
-These classes implement their respective interfaces from OptimizationLib.aco.
-1. [GenericGraphQapAntColonyAlgorithm](#genericgraphqapantcolonyalgorithm): Extends StatsAntColonyAlgorithm.
+This folder contains two different classes that define the structures required for solving the problem. These classes implement their respective interfaces from `OptimizationLib.aco`:
+1. [GenericGraphQapAntColonyAlgorithm](#genericgraphqapantcolonyalgorithm): Extends `StatsAntColonyAlgorithm`.
 2. [RunGenericGraphQapOptimization](#rungenericgraphqapoptimization): The main class for instantiation and optimization.
 
 ### [GenericGraphQapAntColonyAlgorithm](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/QAP/GenericGraph/GenericGraphQapAntColonyAlgorithm.java):
-This class extends StatsAntColonyAlgorithm, which by extension makes it an Optimizer instance. In other words, this class
-can be optimized and its results can be gathered.
+This class extends `StatsAntColonyAlgorithm`, which effectively makes it an instance of an optimizer. In other words, this class can be optimized, and its results can be collected.
 
-````code
+````java
 public void optimize(){...}
 public Object getResult(Object... resultArgs){...}
 ````
-The <i>optimize</i> method is inherited from the abstract class StatsAntColonyAlgorithm, which defines a basic optimization
-procedure. The <i>getResults</i> function returns a String that will be printed in the screen with the assignations.
+The `<i>optimize</i>` method is inherited from the abstract class `StatsAntColonyAlgorithm`, which defines a basic optimization procedure. The `<i>getResults</i>` function returns a string that will be printed on the screen with the assignments.
 
 ### [RunGenericGraphQapOptimization](https://github.com/SergioOyaga/AntColonyAlgorithmExamples/blob/master/src/main/java/org/soyaga/examples/QAP/GenericGraph/RunGenericGraphQapOptimization.java):
-This is the main class. Is where the run starts. As simple as instantiate the RunGenericGraphQapOptimization object 
-(previously defined) filled with its components, optimize it, and retrieve the results.
+This is the main class where the execution starts. It is as simple as instantiating the `RunGenericGraphQapOptimization` object (previously defined), filling it with its components, optimizing it, and retrieving the results.
 
-The specific components for the RunGenericGraphQapOptimization are:
-- GenericWorld: A World that contains a Graph and a PheromoneContainer.
-  - GenericGraph: A Graph that stores the "distance" and pheromone into in a graph like object.
-- Colony.
-- MaxIterationCriteriaPolicy: A StoppingCriteria based on a maximum number of iterations.
-- ACOInitializer: An Initializer that creates N ants in a colony.
-  - BackHomeMemoryAnt: An Ant with memory that tries to go back home when no new paths are available.
-    - Solution.
-      - QapObjectiveFunction: An ObjectiveFunction that evaluates the ant solution using a QAP like objective function.
-      - AllNodesCircleBuilderEvaluator: A BuilderEvaluator that tells the ant to keep building the solution if its
-        solution doesn't start and end the same node and visits certain nodes.
-    - RandomProportionalEdgeSelector: An EdgeSelector that allows the ant to choose between the available edges.
-- SimpleConstructorPolicy: A ConstructorPolicy, ant by ant build the solution.
-- SimpleUpdatePheromonePolicy: A PheromonePolicy, first evaporate, then add.
-  - MaxGlobalBestFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
-    best historical solution fitness up to a maximum limit.
-  - MaxElitistFitnessProportionalAddPheromonePolicy: An AddPheromonePolicy that adds pheromone to the edges proportionally to the
-    N-best current solutions fitnesses up to a maximum limit.
-  - MinPercentageEvaporatePheromonePolicy: An EvaporatePheromonePolicy that evaporates a certain percentage of the 
-    pheromone on each edge down to a minimum.
-- NIterationsStatsRetrievalPolicy: A StatsRetrievalPolicy that retrieves Stats every N iterations.
-  - CurrentMinFitnessStat: A Stat that retrieves the current colony's best fitness.
-  - CurrentMaxFitnessStat: A Stat that retrieves the current colony's worst fitness.
-  - HistoricalMinFitnessStat: A Stat that retrieves the historical colony's best fitness.
-  - HistoricalMaxFitnessStat: A Stat that retrieves the historical colony's worst fitness.
-  - MeanSdFitnessStat: A Stat that retrieves the colony fitness mean and STD.
-  - PercentileFitnessStat: A Stat that retrieves the colony fitness value for specific quartiles.
-  - MeanSdPheromoneStat: A Stat that retrieves the pheromone mean and STD in the PheromoneContainer.
-  - PercentilePheromoneStat: A Stat that retrieves the pheromone value for specific quartiles.
-  - StepGradientStat: A Stat that retrieves the step gradient.
-  - TimeGradientStat: A Stat that retrieves the time gradient.
-  - ElapsedTimeStat: A Stat that retrieves the elapsed time.
-  - PheromoneContainerGIFStat: A Stat that generates a GIF of the pheromone evolution in the PheromoneContainer.
+The specific components for the `RunGenericGraphQapOptimization` are:
+- **GenericWorld**: A world that contains a graph and a pheromone container.
+  - **GenericGraph**: A graph that stores the "distance" and pheromone in a graph-like object.
+- **Colony**.
+- **MaxIterationCriteriaPolicy**: A stopping criterion based on a maximum number of iterations.
+- **ACOInitializer**: An initializer that creates N ants in a colony.
+  - **BackHomeMemoryAnt**: An ant with memory that tries to return home when no new paths are available.
+    - **Solution**.
+      - **QapObjectiveFunction**: An objective function that evaluates the ant's solution using a QAP-like objective function.
+      - **AllNodesCircleBuilderEvaluator**: A builder evaluator that instructs the ant to keep building the solution if it doesn't start and end at the same node and visits certain nodes.
+    - **RandomProportionalEdgeSelector**: An edge selector that allows the ant to choose between the available edges.
+- **SimpleConstructorPolicy**: A constructor policy that builds the solution ant by ant.
+- **SimpleUpdatePheromonePolicy**: A pheromone policy that first evaporates pheromone and then adds new pheromone.
+  - **MaxGlobalBestFitnessProportionalAddPheromonePolicy**: An add pheromone policy that adds pheromone to the edges proportionally to the best historical solution's fitness, up to a maximum limit.
+  - **MaxElitistFitnessProportionalAddPheromonePolicy**: An add pheromone policy that adds pheromone to the edges proportionally to the fitnesses of the N-best current solutions, up to a maximum limit.
+  - **MinPercentageEvaporatePheromonePolicy**: An evaporate pheromone policy that evaporates a certain percentage of the pheromone on each edge down to a minimum.
+- **NIterationsStatsRetrievalPolicy**: A stats retrieval policy that retrieves statistics every N iterations.
+  - **CurrentMinFitnessStat**: A stat that retrieves the current colony's best fitness.
+  - **CurrentMaxFitnessStat**: A stat that retrieves the current colony's worst fitness.
+  - **HistoricalMinFitnessStat**: A stat that retrieves the historical colony's best fitness.
+  - **HistoricalMaxFitnessStat**: A stat that retrieves the historical colony's worst fitness.
+  - **MeanSdFitnessStat**: A stat that retrieves the colony's fitness mean and standard deviation (STD).
+  - **PercentileFitnessStat**: A stat that retrieves the colony's fitness value for specific quartiles.
+  - **MeanSdPheromoneStat**: A stat that retrieves the mean and standard deviation of pheromone in the pheromone container.
+  - **PercentilePheromoneStat**: A stat that retrieves the pheromone value for specific quartiles.
+  - **StepGradientStat**: A stat that retrieves the step gradient.
+  - **TimeGradientStat**: A stat that retrieves the time gradient.
+  - **ElapsedTimeStat**: A stat that retrieves the elapsed time.
+  - **PheromoneContainerGIFStat**: A stat that generates a GIF of the pheromone evolution in the pheromone container.
 
-On the other hand, the majority of the effort in this type of algorithms must be dedicated to constructing the World.
+On the other hand, the majority of the effort in these types of algorithms must be dedicated to constructing the world.
 
-In this scenario, certain functions are specifically focused on building the World. This is necessary because we must represent
-the problem in a graphical way, creating a structure for the ants to traverse the edges of the graph.
+In this scenario, certain functions are specifically focused on building the world. This is necessary to represent the problem graphically, creating a structure for the ants to traverse the edges of the graph.
 
 The next function builds the world.
 
-````code
+
+````java
 private static GenericWorld createWorld(
             String inputPathLocations, String inputPathFlows, Double initialPheromone,
             HashMap<Object, HashMap<Object, Double>> locationsDistances,
             HashMap<Object, HashMap<Object, Double>> facilitiesFlows)
 ````
-The World is built with one Graph/PheromoneContainer that illustrates "distances" and pheromone between nodes. Each Node in
-the Graph has associated a set of Edges that connects it with other Nodes. Those Edges contain the "distance" and 
-pheromone information. 
+The World is constructed with a single Graph/PheromoneContainer that represents the "distances" and pheromones between nodes. Each Node in the Graph is associated with a set of Edges that connect it to other Nodes. These Edges contain information about both the "distance" and the pheromone levels.
 
 ````mermaid
 flowchart LR
@@ -146,18 +135,13 @@ subgraph  ide0 [World]
   end
 ````
 
-The distance of the edges in the Assignation part of the graph represents the heuristic distance, which indicates the 
-attractiveness for the ant when choosing that edge. In contrast, in the Order part of the graph, the distance is set 
-to 1. This is because the order in which the ants assign the facilities to locations is not of concern. It's important 
-to note that the nodes in both the Assignation and Order parts share the same names because they correspond to the
-same nodes in the graph. This representation is divided into two parts to enhance understanding.
+The distance of the edges in the Assignment part of the graph represents the heuristic distance, which indicates the attractiveness for the ant when choosing that edge. In contrast, in the Order part of the graph, the distance is set to 1, as the order in which the ants assign the facilities to locations is not a concern. It is important to note that the nodes in both the Assignment and Order parts share the same names because they correspond to the same nodes in the graph. This dual representation is designed to enhance understanding.
 
 #### qapNode:
-Auxiliary class used to store the Graphical information of the nodes. We store the ID:
-- ID (Integer): Contains node number.
+An auxiliary class used to store graphical information about the nodes. We store the following ID:
+- ID (Integer): Contains the node number.
 
-For this particular case, this class is not necessary at all, but we preferred to keep it because it may be useful for 
-the developer to store additional node information.
+In this particular case, this class is not strictly necessary; however, we chose to keep it because it may be useful for developers to store additional node information.
 
 ## Result example:
 <table>
@@ -187,14 +171,10 @@ the developer to store additional node information.
 </table>
 
 ## Comment:
-This solution has been tested against an internet solver, and both solvers propose the same solutions. However, you may
-notice a difference in the solution values: the value proposed in the image is 1160, whereas the ACO (Ant Colony 
-Optimization) algorithm yields a value of 2320.
-This discrepancy arises from our consideration of the flow table as outgoing flow values, while the solver on the 
-internet treats flows as both outgoing and ingoing. Consequently, the flow matrix becomes symmetric. As a result, 
-the web solver calculates the solution value using only the values above the diagonal of the flow matrix.
+This solution has been tested against an online solver, and both solvers propose the same solutions. However, you may notice a difference in the solution values: the value presented in the image is 1160, whereas the Ant Colony Optimization (ACO) algorithm yields a value of 2320. 
 
-We have chosen to maintain a more general approach in our implementation, allowing for the introduction of asymmetric 
-flows between facilities.
+This discrepancy arises from our treatment of the flow table as containing only outgoing flow values, while the online solver considers flows as both outgoing and incoming. Consequently, the flow matrix becomes symmetric, leading the web solver to calculate the solution value using only the values above the diagonal of the flow matrix.
 
-(The same principle applies to distances) :smirk_cat:
+We have opted to maintain a more general approach in our implementation, allowing for the introduction of asymmetric flows between facilities.
+
+(The same principle applies to distances.) :smirk_cat:
