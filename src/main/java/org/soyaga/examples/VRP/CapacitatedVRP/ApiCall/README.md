@@ -106,5 +106,5 @@ We can see this in the following images:
 
 ## Comment:
 
-This solution is a test developed as an intermediate step for the CapacitatedVRP with real-time optimization and Google API calls for routing and data gathering. :Scream_cat:
+This solution is a test developed as an intermediate step for the CapacitatedVRP with real-time optimization and Google API calls for routing and data gathering. :scream_cat:
 
