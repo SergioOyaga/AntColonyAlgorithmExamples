@@ -191,5 +191,5 @@ We see that the solution changes depending on the relevancy of each objective. W
 </table>We see that the solution converges to the best possible routes. As a conclusion to this test, we see that the ACO properly optimizes the problem.
 
 ## Comment:
-This solution is a test developed as an intermediate step for the CapacitatedVRP with real-time optimization and Google API calls for routing and data gathering. :Scream_cat:
+This solution is a test developed as an intermediate step for the CapacitatedVRP with real-time optimization and Google API calls for routing and data gathering. :scream_cat:
 
