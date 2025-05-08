@@ -218,6 +218,8 @@ public class CapacitatedVRPColonyAlgorithm implements AntColonyAlgorithm, Runnab
      * Function that performs the typical optimization for an ant colony optimization algorithm.
      */
     public synchronized void optimize() throws IOException {
+        this.statsRetrievalPolicy.printHeaderInConsole();
+        this.statsRetrievalPolicy.printHeaderInCSV();
         this.acoInitializer.initialize(this);
         while (!this.getStopFlag()){
             this.isUpdating();
